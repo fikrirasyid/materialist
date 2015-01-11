@@ -1,0 +1,25 @@
+#masthead{
+	background: $color__accent;
+	color: white;
+
+	a{
+		color: white;
+	}
+
+	.site-branding{
+		margin: 64px 15px;
+	}
+
+	.site-title{
+		@include font-size( 2 );
+
+		a{
+			text-decoration: none;
+		}
+	}
+
+	.site-description{
+		@include font-size( 1.4 );
+		font-weight: lighter;
+	}
+}

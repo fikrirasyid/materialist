@@ -65,6 +65,57 @@ function the_post_navigation() {
 }
 endif;
 
+if( ! function_exists( 'materialist_paging_nav_newer' ) ) :
+/**
+ * Display navigation to newer set of posts when applicable.
+ */
+function materialist_paging_nav_newer() {
+	// Don't print empty markup if there's only one page.
+	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
+		return;
+	}
+	?>
+	<?php if ( get_previous_posts_link() ) : ?>
+
+	<nav class="navigation paging-navigation newer" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'materialist' ); ?></h1>
+		<div class="nav-links">
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer Posts', 'materialist' ) ); ?></div>
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+
+	<?php endif; ?>
+
+	<?php
+}
+endif; 
+
+if ( ! function_exists( 'materialist_paging_nav_older' ) ) :
+/**
+ * Display navigation to older set of posts when applicable.
+ */
+function materialist_paging_nav_older() {
+	// Don't print empty markup if there's only one page.
+	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
+		return;
+	}
+	?>
+	<?php if ( get_next_posts_link() ) : ?>
+
+	<nav class="navigation paging-navigation older" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'materialist' ); ?></h1>
+		<div class="nav-links">
+			<div class="nav-previous"><?php next_posts_link( __( 'More Posts', 'materialist' ) ); ?></div>
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+
+	<?php endif; ?>
+
+	<?php
+}
+endif;
+
+
 if ( ! function_exists( 'materialist_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
@@ -77,22 +128,14 @@ function materialist_posted_on() {
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
+		esc_html( get_the_date( 'M jS' ) ),
 		esc_attr( get_the_modified_date( 'c' ) ),
 		esc_html( get_the_modified_date() )
 	);
 
-	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'materialist' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
+	$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
-	$byline = sprintf(
-		_x( 'by %s', 'post author', 'materialist' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
-
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+	echo '<span class="posted-on">' . $posted_on . '</span>';
 
 }
 endif;

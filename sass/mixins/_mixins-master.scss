@@ -20,3 +20,39 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Border radius
+@mixin border-radius($radius) {
+	background-clip: padding-box; /* stops bg color from leaking outside the border: */
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Box model
+@mixin box-sizing($box-model) {
+	-webkit-box-sizing: $box-model; // Safari <= 7
+	-moz-box-sizing: $box-model; // Firefox <= 19
+	box-sizing: $box-model;
+}
+
+// Layout wrapping
+@mixin wrap( $width ){
+	display: block;
+	width: $width;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// Tablet typography
+@mixin font-size-tablet( $size ){
+	@media screen and ( min-width: $size__breakpoint-tablet ){
+		@include font-size( $size );
+	}		
+}
+
+// Desktop typography
+@mixin font-size-desktop( $size ){
+	@media screen and ( min-width: $size__breakpoint-desktop ){
+		@include font-size( $size );
+	}	
+}

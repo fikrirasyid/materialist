@@ -18,6 +18,8 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+			<?php materialist_paging_nav_newer(); ?>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -31,7 +33,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php materialist_paging_nav_older(); ?>
 
 		<?php else : ?>
 
@@ -42,5 +44,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -1,0 +1,6 @@
+#colophon{
+	border-top: 1px solid $color__border;
+	padding: 15px;
+	text-align: center;
+	@include font-size( 1.4 );
+}

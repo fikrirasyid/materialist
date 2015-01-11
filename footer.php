@@ -12,9 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'materialist' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'materialist' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'materialist' ), 'Materialist', '<a href="http://fikrirasy.id" rel="designer">Fikri Rasyid</a>' ); ?>
+			<?php printf( __( '%1$s by %2$s.', 'materialist' ), '<a href="http://fikrirasy.id/portfolio/materialist/">Materialist</a>', '<a href="http://fikrirasy.id" rel="designer">Fikri Rasyid</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
