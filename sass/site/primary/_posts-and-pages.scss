@@ -83,10 +83,24 @@
 
 	&.newer{
 		padding-top: 10px;
+
+		a:before{
+			@include genericon;
+			content: '\f432';
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 	&.older{
 		padding-bottom: 10px;
+
+		a:after{
+			@include genericon;
+			content: '\f431';
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 	a{
