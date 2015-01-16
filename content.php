@@ -4,6 +4,11 @@
  */
 ?>
 
+<?php 
+	// hentry separator
+	get_template_part( 'content', 'hentry-separator' ); 
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-date">
 		<?php materialist_posted_on(); ?>		

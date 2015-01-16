@@ -6,6 +6,14 @@
 	display: block;
 }
 
+.hentry-separator{
+	color: $color__accent;
+	font-weight: bold;
+	@include font-size( 1.2 );
+	text-transform: uppercase;
+	margin: 35px 0 13px;
+}
+
 .hentry {
 	margin: 0;
 	background: white;

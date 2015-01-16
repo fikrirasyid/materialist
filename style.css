@@ -1182,6 +1182,15 @@ a:hover, a:focus, a:active {
   display: block;
 }
 
+.hentry-separator {
+  color: #607D8B;
+  font-weight: bold;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 35px 0 13px;
+}
+
 .hentry {
   margin: 0;
   background: white;
