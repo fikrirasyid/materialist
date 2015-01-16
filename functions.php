@@ -112,6 +112,30 @@ function materialist_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'materialist_scripts' );
 
+if( ! function_exists( 'materialist_excerpt_length') ) :
+/**
+ * Modifying excerpt's length
+ * 
+ * @return int
+ */
+function materialist_excerpt_length(){
+	return 20;
+}
+endif;
+add_filter( 'excerpt_length', 'materialist_excerpt_length' );
+
+if( ! function_exists( 'materialist_excerpt_more' ) ) :
+/**
+ * Replacing excerpt's annoying [&hellip;]
+ * 
+ * @return string
+ */
+function materialist_excerpt_more(){
+	return ' &hellip;';
+}
+endif;
+add_filter( 'excerpt_more', 'materialist_excerpt_more' );
+
 /**
  * Implement the Custom Header feature.
  */
