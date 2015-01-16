@@ -307,3 +307,23 @@ function materialist_category_transient_flusher() {
 }
 add_action( 'edit_category', 'materialist_category_transient_flusher' );
 add_action( 'save_post',     'materialist_category_transient_flusher' );
+
+/**
+ * Post thumbnail
+ */
+if( ! function_exists( 'materialist_entry_thumbnail' ) ) :
+function materialist_entry_thumbnail( $post_id = false ){
+
+	if( ! $post_id ){
+		$post_id = get_the_ID();
+	}
+
+	if( has_post_thumbnail() ){
+
+		echo '<a href="'. get_permalink( $post_id ) .'" title="'. get_the_title( $post_id ) .'" class="entry-thumbnail">';
+		echo get_the_post_thumbnail( $post_id, 'thumbnail' );
+		echo '</a>';
+
+	} 
+}
+endif;

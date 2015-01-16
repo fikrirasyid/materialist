@@ -13,6 +13,21 @@
 	border-bottom: 1px solid $color__border;
 	padding: 25px 15px 25px 75px;
 	position: relative;
+
+	&.has-post-thumbnail{
+		padding-right: 80px;
+
+		.entry-thumbnail{
+			position: absolute;
+			top: 25px;
+			right: 15px;
+			width: 50px;
+			background: white;
+			padding: 2px 2px 0;
+			line-height: 1;
+			box-shadow: 0 0 1px darken( $color__border, 20% );
+		}
+	}
 }
 
 .entry-date{
