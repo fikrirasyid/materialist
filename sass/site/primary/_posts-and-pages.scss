@@ -43,6 +43,10 @@
 	}
 }
 
+.entry-content{
+	overflow: hidden;
+}
+
 .byline,
 .updated:not(.published){
 	display: none;

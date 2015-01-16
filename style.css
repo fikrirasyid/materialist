@@ -675,6 +675,10 @@ a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
+.entry-content {
+  overflow: hidden;
+}
+
 .byline,
 .updated:not(.published) {
   display: none;
