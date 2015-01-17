@@ -126,9 +126,16 @@ function materialist_posted_on() {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 	}
 
+	// Determine date format
+	if( is_singular() ){
+		$date_format = 'M jS Y';
+	} else {
+		$date_format = 'M jS';
+	}
+
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date( 'M jS' ) ),
+		esc_html( get_the_date( $date_format ) ),
 		esc_attr( get_the_modified_date( 'c' ) ),
 		esc_html( get_the_modified_date() )
 	);

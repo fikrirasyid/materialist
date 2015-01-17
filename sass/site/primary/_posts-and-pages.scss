@@ -12,6 +12,18 @@
 	@include font-size( 1.2 );
 	text-transform: uppercase;
 	margin: 35px 0 13px;
+
+	.entry-date{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+		text-align: left;
+	}
+
+	a{
+		text-decoration: none;
+	}
 }
 
 .hentry {
@@ -55,6 +67,11 @@
 	}
 }
 
+.entry-featured-image{
+	display: block;
+	margin: -25px -15px 15px -15px;
+}
+
 .entry-title{
 	line-height: 1.3;
 	@include font-size( 1.7 );
@@ -68,6 +85,22 @@
 
 .entry-content{
 	overflow: hidden;
+	line-height: 1.6;
+}
+
+.single{
+	.hentry{
+		padding: 25px 15px;
+
+		&.post-thumbnail{
+			padding: 25px 15px;
+		}
+	}
+
+	.entry-title{
+		@include font-size( 2.2 );
+		font-weight: bold;
+	}
 }
 
 .byline,

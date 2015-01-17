@@ -1190,6 +1190,16 @@ a:hover, a:focus, a:active {
   text-transform: uppercase;
   margin: 35px 0 13px;
 }
+.hentry-separator .entry-date {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: auto;
+  text-align: left;
+}
+.hentry-separator a {
+  text-decoration: none;
+}
 
 .hentry {
   margin: 0;
@@ -1230,6 +1240,11 @@ a:hover, a:focus, a:active {
   font-size: 1.1rem;
 }
 
+.entry-featured-image {
+  display: block;
+  margin: -25px -15px 15px -15px;
+}
+
 .entry-title {
   line-height: 1.3;
   font-size: 17px;
@@ -1243,6 +1258,19 @@ a:hover, a:focus, a:active {
 
 .entry-content {
   overflow: hidden;
+  line-height: 1.6;
+}
+
+.single .hentry {
+  padding: 25px 15px;
+}
+.single .hentry.post-thumbnail {
+  padding: 25px 15px;
+}
+.single .entry-title {
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 .byline,
@@ -1447,4 +1475,32 @@ object {
 
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+13.0 Plugins
+--------------------------------------------------------------*/
+.entry-content hr.footnotes {
+  display: none;
+}
+.entry-content ol.footnotes {
+  font-size: 12px;
+  font-size: 1.2rem;
+  opacity: .7;
+  position: relative;
+  margin-top: 3em;
+  padding-top: 3em;
+  margin-left: 1.5em;
+}
+.entry-content ol.footnotes:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 65%;
+  height: 1px;
+  background: #DFDFDF;
+}
+.entry-content ol.footnotes li p:last-child {
+  margin-bottom: 0;
 }
