@@ -37,13 +37,11 @@ function the_posts_navigation() {
 }
 endif;
 
-if ( ! function_exists( 'the_post_navigation' ) ) :
+if ( ! function_exists( 'materialist_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
- *
- * @todo Remove this function when WordPress 4.3 is released.
  */
-function the_post_navigation() {
+function materialist_post_nav() {
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -53,11 +51,11 @@ function the_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'materialist' ); ?></h2>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'cinnamon' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
-				next_post_link( '<div class="nav-next">%link</div>', '%title' );
+				previous_post_link( '<div class="nav nav-previous">%link</div>', __( '<span class="label">Previously</span><span class="title">%title</span>', 'cinnamon' ) );
+				next_post_link(     '<div class="nav nav-next">%link</div>',     __( '<span class="label">Read Next</span><span class="title">%title</span>', 'cinnamon' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -157,13 +155,13 @@ function materialist_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'materialist' ) );
 		if ( $categories_list && materialist_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'materialist' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . __( '<span class="label">Posted in</span> %1$s', 'materialist' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'materialist' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'materialist' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . __( '<span class="label">Tagged by</span> %1$s', 'materialist' ) . '</span>', $tags_list );
 		}
 	}
 

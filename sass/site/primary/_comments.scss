@@ -1,6 +1,92 @@
+.comments-title{
+	color: $color__accent;
+	font-weight: bold;
+	@include font-size( 1.2 );
+	text-transform: uppercase;
+	margin: 0 0 13px;	
+}
+
+#comments{
+	background: white;
+	box-shadow: 0 1px 2px rgba( 151, 151, 151, .58 );
+}
+
+.comment-list{
+	list-style: none;
+	margin: 0;
+
+	.comment{
+		border-bottom: 1px solid $color__border;
+
+		.comment-body{
+			padding: 15px 15px 15px 60px;
+			position: relative;			
+		}
+
+		.comment-author{
+			.url{
+				text-decoration: none;
+				@include font-size( 1.6 );
+				font-weight: lighter;
+			}
+		}
+
+		.avatar{
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			@include border-radius( 50% );
+		}
+
+		.comment-reply-link{
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			text-transform: uppercase;
+			text-decoration: none;
+			@include font-size( 1.1 );
+		}
+
+		.children{
+			margin-left: 50px;
+
+			.comment{
+				border: none;
+			}
+		}
+	}
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
 .bypostauthor {
 	display: block;
+}
+
+#respond{
+	padding: 15px;
+	position: relative;
+
+	label{
+		margin-bottom: 5px;
+		display: block;
+		color: $color__text_date;
+		@include font-size( 1.2 );
+	}
+}
+
+#reply-title{
+	color: $color__accent;
+	font-weight: bold;
+	@include font-size( 1.2 );
+	text-transform: uppercase;
+	margin-bottom: 10px;	
+}
+
+#cancel-comment-reply-link{
+	text-decoration: none;
+	position: absolute;
+	top: 18px;
+	right: 15px;
 }

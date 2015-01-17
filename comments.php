@@ -18,17 +18,20 @@ if ( post_password_required() ) {
 }
 ?>
 
+<?php if ( have_comments() ) : ?>
+	<h2 class="comments-title">
+		<?php
+			printf( _nx( 'One response on &ldquo;%2$s&rdquo;', '%1$s responses on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'materialist' ),
+				number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+		?>
+	</h2>
+<?php endif; ?>
+
 <div id="comments" class="comments-area">
 
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'materialist' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-			?>
-		</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
@@ -64,6 +67,11 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'materialist' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php 
+		comment_form( array(
+			'comment_notes_before' 	=> false,
+			'comment_notes_after' 	=> false
+		) ); 
+	?>
 
 </div><!-- #comments -->

@@ -101,6 +101,35 @@
 		@include font-size( 2.2 );
 		font-weight: bold;
 	}
+
+	.entry-footer{
+		display: block;
+		margin:0 -15px -25px;
+	}
+
+	.cat-links,
+	.tags-links{
+		display: block;
+		border-top: 1px solid $color__border;
+		position: relative;
+		padding: 15px 15px 15px 100px;
+
+		.label{
+			position: absolute;
+			top: 17px;
+			left: 0;
+			width: 100px;
+			text-align: center;
+			text-transform: uppercase;
+			@include font-size( 1.1 );
+			font-weight: bold;
+			color: $color__text_date;
+		}
+
+		a{
+			text-decoration: none;
+		}
+	}
 }
 
 .byline,
