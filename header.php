@@ -22,7 +22,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'materialist' ); ?></a>
 
 	<nav id="top-navigation">
-		<a href="#navigation-drawer" data-target-id="navigation-drawer" class="genericon genericon-menu toggle-button"><span class="label"><?php _e( 'Navigation', 'materialist' ); ?></span></a>
+		<a href="#drawer" data-target-id="drawer" class="genericon genericon-menu toggle-button"><span class="label"><?php _e( 'Navigation', 'materialist' ); ?></span></a>
 		<a href="#search-form" data-target-id="search-form" class="genericon genericon-search toggle-button"><span class="label"><?php _e( 'Search', 'materialist' ); ?></span></a>
 	</nav>
 

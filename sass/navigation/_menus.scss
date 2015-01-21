@@ -27,7 +27,8 @@ body{
 			box-shadow: 0 1px 2px $color__accent;
 		}		
 	}
-
+	
+	&.drawer-expanded,
 	&.search-form-expanded{
 		#top-navigation{
 			display: none;			
