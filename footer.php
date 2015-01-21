@@ -10,6 +10,12 @@
 
 	</div><!-- #content -->
 
+	<div id="search-form">
+		<?php get_search_form(); ?>
+
+		<a href="#" class="genericon genericon-close-alt toggle-button" data-target-id="search-form"><span class="label">Close</span></a>
+	</div><!-- #search-form -->
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php printf( __( '%1$s by %2$s.', 'materialist' ), '<a href="http://fikrirasy.id/portfolio/materialist/">Materialist</a>', '<a href="http://fikrirasy.id" rel="designer">Fikri Rasyid</a>' ); ?>

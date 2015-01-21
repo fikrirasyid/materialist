@@ -999,6 +999,9 @@ body.scrolling #top-navigation {
   background: #455A64;
   box-shadow: 0 1px 2px #607D8B;
 }
+body.search-form-expanded #top-navigation {
+  display: none;
+}
 
 .post-navigation {
   padding: 10px 0;
@@ -1495,6 +1498,42 @@ body.scrolling #top-navigation {
 /*--------------------------------------------------------------
 10.x Footer
 --------------------------------------------------------------*/
+#search-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 9px 60px 9px 15px;
+  background: rgba(255, 255, 255, 0.98);
+  z-index: 60;
+  display: none;
+}
+#search-form .search-field {
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 5px 10px;
+}
+#search-form .search-submit {
+  display: none;
+}
+#search-form .genericon {
+  font-size: 20px;
+}
+#search-form .genericon .label {
+  display: none;
+}
+#search-form .genericon-close-alt {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -9px;
+}
+
+.scrolling #search-form {
+  border-bottom: 1px solid #455A64;
+}
+
 #colophon {
   border-top: 1px solid #DFDFDF;
   padding: 15px;

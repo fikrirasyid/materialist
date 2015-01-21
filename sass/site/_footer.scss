@@ -1,3 +1,51 @@
+#search-form{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 9px 60px 9px 15px;
+	background: rgba( 255, 255, 255, .98);
+	z-index: 60;
+	display: none;
+
+	.search-field{
+		width: 100%;
+		box-sizing: border-box;
+		// @include border-radius( 3px );
+		background: transparent;
+		padding: 5px 10px;
+
+		&:focus{
+			// box-shadow: none;
+		}
+	}
+
+	.search-submit{
+		display: none;
+	}
+
+	.genericon{
+		font-size: 20px;
+
+		.label{
+			display: none;
+		}
+	}
+
+	.genericon-close-alt{
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		margin-top: -9px;
+	}
+}
+
+.scrolling{
+	#search-form{
+		border-bottom: 1px solid $color__accent_darker;		
+	}
+}
+
 #colophon{
 	border-top: 1px solid $color__border;
 	padding: 15px;

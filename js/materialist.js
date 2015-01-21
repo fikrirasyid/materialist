@@ -21,6 +21,22 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	/**
+	* Toggle expanded UI
+	*/
+	$('.toggle-button').click(function(e){
+		e.preventDefault();
+
+		// Get target ID
+		var target_id = $(this).attr( 'data-target-id' );
+
+		// Display target ID
+		$('#'+target_id).fadeToggle();
+
+		// Mark body
+		$('body').toggleClass( target_id + '-expanded' );
+	});
+
 });
 
 /**
