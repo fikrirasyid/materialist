@@ -1,5 +1,5 @@
 #main{
-	margin: 15px;
+	margin: 20px;
 }
 
 .sticky {
@@ -31,28 +31,41 @@
 	background: white;
 	box-shadow: 0 1px 2px rgba( 151, 151, 151, .58 );
 	border-bottom: 1px solid $color__border;
-	padding: 25px 15px 25px 75px;
+	padding: 15px 15px 15px 75px;
 	position: relative;
 
 	&.has-post-thumbnail{
-		padding-right: 80px;
+		// padding-right: 80px;
+		// min-height: 88px;
 
 		.entry-thumbnail{
-			position: absolute;
-			top: 25px;
-			right: 15px;
-			width: 50px;
+			// position: absolute;
+			// top: 19px;
+			// right: 15px;
+			// display: none;
+			margin-top: 15px;
+			display: block;
+			max-width: 250px;
+			max-height: 150px;
+			overflow: hidden;
 			background: white;
-			padding: 2px 2px 0;
-			line-height: 1;
-			box-shadow: 0 0 1px darken( $color__border, 20% );
+			line-height: 0;
+			box-shadow: 0 1px 2px darken( $color__border, 30% );
+
+			img{
+				width: 100%;
+			}
 		}
+	}
+
+	p:last-child{
+		margin-bottom: 0;
 	}
 }
 
 .entry-date{
 	position: absolute;
-	top: 14px;
+	top: 8px;
 	left: 5px;
 	width: 55px;
 	text-align: center;
@@ -76,20 +89,47 @@
 	}
 }
 
+.entry-header{
+	display: inline;
+}
+
 .entry-title{
 	line-height: 1.3;
-	@include font-size( 1.7 );
-	font-weight: lighter;
-	margin-bottom: 10px;
+	@include font-size( 1.4 );
+	// margin-bottom: 10px;
+	// font-weight: 300;
+	display: inline;
 
 	a{
 		text-decoration: none;
 	}
 }
 
+.entry-summary{
+	display: inline;
+	@include font-size( 1.3 );
+	color: lighten( $color__text-main, 40% );
+
+	&:before{
+		content: '';
+		display: inline-block;
+		width: 15px;
+		height: 1px;
+		background: lighten( $color__text-main, 30% );
+		vertical-align: middle;
+		margin: -2px 5px 0;
+	}
+
+	p{
+		display: inline;
+	}
+}
+
 .entry-content{
 	overflow: hidden;
 	line-height: 1.6;
+	@include font-size( 1.4 );
+	margin-top: 20px;
 }
 
 .page,
@@ -104,12 +144,13 @@
 
 	.entry-title{
 		@include font-size( 2.2 );
-		font-weight: bold;
+		font-weight: normal;
+		margin-bottom: 20px;
 	}
 
 	.entry-footer{
 		display: block;
-		margin:0 -15px -25px;
+		margin:20px -15px -25px;
 	}
 
 	.cat-links,
@@ -181,7 +222,6 @@
 	a{
 		color: $color__text-navigation;
 		text-decoration: none;
-		font-weight: lighter;
 		@include font-size( 1.6 );
 	}
 }
@@ -195,6 +235,39 @@
 		@include wrap( 660px );
 	}
 
+	.hentry-separator{
+		@include font-size( 1.4 );
+	}
+
+	.hentry{
+		padding-left: 120px;
+		padding-right: 25px;
+
+		&.has-post-thumbnail{
+
+		}
+	}
+
+	.entry-date{
+		left: 10px;
+		text-align: left;
+		width: 80px;
+		@include font-size( 1.2 );
+	}
+
+	.entry-title{
+		@include font-size( 1.8 );
+	}
+
+	.entry-summary{
+		@include font-size( 1.4 );
+	}
+
+	.entry-content{
+		@include font-size( 1.6 );
+		line-height: 1.8;
+	}
+
 	.page,
 	.single{
 		.hentry{
@@ -206,7 +279,22 @@
 		}
 
 		.entry-footer{
-			margin:0 -60px -25px;
+			margin:40px -60px -25px;
+			@include font-size( 1.4 );
+
+			.label{
+				@include font-size( 1.3 );
+			}
+		}
+
+		.entry-date{
+			@include font-size( 1.4 );
+		}
+
+		.entry-title{
+			@include font-size( 3.4 );
+			margin-bottom: 25px;
+			color: $color__accent;
 		}
 
 		.cat-links,
@@ -218,22 +306,6 @@
 			}
 		}
 	}
-
-	.post-navigation{
-		.nav{
-			display: inline-block;
-			width: 49%;
-
-			&:last-child{				
-				border: none;
-
-				&.nav-next{
-					text-align: right;
-				}
-			}
-		}
-	}
-
 }
 
 

@@ -100,7 +100,7 @@ add_action( 'widgets_init', 'materialist_widgets_init' );
  * Enqueue scripts and styles.
  */
 function materialist_scripts() {
-    wp_enqueue_style( 'materialist-google-fonts', '//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic' );
+    wp_enqueue_style( 'materialist-google-fonts', '//fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400' );
 
 	wp_enqueue_style( 'materialist-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'materialist-script', get_template_directory_uri() . '/js/materialist.js', array( 'jquery' ), '20150121' );

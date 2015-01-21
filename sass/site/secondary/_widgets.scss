@@ -50,7 +50,6 @@
 
 	.drawer-navigation{
 		@include font-size( 1.8 );
-		font-weight: lighter;
 		padding: 15px 15px 15px 50px;
 		border-bottom: 1px solid $color__border;
 		line-height: 1.8;
@@ -100,7 +99,6 @@
 	ul,ol{
 		margin: 0;
 		@include font-size( 1.6 );
-		font-weight: lighter;
 	}
 
 	.widget-title{

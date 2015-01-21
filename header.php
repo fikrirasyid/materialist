@@ -23,6 +23,7 @@
 
 	<nav id="top-navigation">
 		<a href="#drawer" data-target-id="drawer" class="genericon genericon-menu toggle-button"><span class="label"><?php _e( 'Navigation', 'materialist' ); ?></span></a>
+		<h3 class="site-title-nav"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
 		<a href="#search-form" data-target-id="search-form" class="genericon genericon-search toggle-button"><span class="label"><?php _e( 'Search', 'materialist' ); ?></span></a>
 	</nav>
 

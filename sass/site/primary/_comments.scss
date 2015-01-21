@@ -27,7 +27,8 @@
 
 		.comment-body{
 			padding: 15px 15px 15px 60px;
-			position: relative;			
+			position: relative;		
+			@include font-size( 1.4 );	
 		}
 
 		.comment-author{
@@ -136,4 +137,59 @@
 	position: absolute;
 	top: 18px;
 	right: 15px;
+}
+
+/**
+* Tablet adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-tablet ){
+	.comments-title{
+		@include font-size( 1.4 );
+	}	
+
+	.comment-list{
+		.comment{
+			.avatar{
+				width: 50px;
+				height: 50px;
+				top: 25px;
+				left: 25px;
+			}
+
+			.comment-body{
+				padding: 25px 25px 25px 120px;
+				@include font-size( 1.6 );
+				line-height: 1.8;
+			}
+
+			.comment-author{
+				@include font-size( 1.8 );
+			}
+
+			.comment-meta{
+				@include font-size( 1.2 );
+			}
+		}
+	}
+
+	#respond{
+		padding: 25px;
+
+		label{
+			@include font-size( 1.4 );
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		textarea{
+			@include font-size( 1.6 );
+			padding: 10px 20px;
+		}
+	}
+
+	#reply-title{
+		@include font-size( 1.4 );
+		margin-bottom: 20px;
+	}
 }

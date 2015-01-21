@@ -1,18 +1,20 @@
 #masthead{
 	background: $color__accent;
 	color: white;
-	padding-top:20px;
+	padding-top:50px;
 
 	a{
 		color: white;
 	}
 
 	.site-branding{
-		margin: 64px 15px;
+		margin: 20px;
 	}
 
 	.site-title{
-		@include font-size( 2 );
+		@include font-size( 2.2 );
+		font-weight: 300;
+		line-height: 1.2;
 
 		a{
 			text-decoration: none;
@@ -20,8 +22,9 @@
 	}
 
 	.site-description{
-		@include font-size( 1.4 );
-		font-weight: lighter;
+		@include font-size( 1.2 );
+		font-weight: 300;
+		opacity: .5;
 	}
 }
 
@@ -31,7 +34,15 @@
 @media screen and ( min-width: $size__breakpoint-tablet ){
 	#masthead{
 		.site-branding{
-			@include wrap( 660px );
+			margin: 70px 20px;
+		}
+
+		.site-title{
+			@include font-size( 5.4 );
+		}
+
+		.site-description{
+			@include font-size( 1.6 );
 		}
 	}
 }

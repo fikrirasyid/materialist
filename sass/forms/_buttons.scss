@@ -37,3 +37,15 @@ input[type="submit"] {
 		}		
 	}
 }
+
+/**
+* Tablet adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-tablet ){
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		@include font-size( 1.4 );
+	}
+}

@@ -3,12 +3,14 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 15px 16px 15px 15px;
+	padding: 20px 20px;
 	z-index: 50;
 
 	.genericon{
-		font-size: 20px;
 		color: white;
+		font-size: 16px;
+		width: 16px;
+		height: 16px;
 
 		.label{
 			display: none;
@@ -16,6 +18,20 @@
 
 		&.genericon-search{
 			float: right;
+			display: none;
+		}
+	}
+
+	.site-title-nav{
+		display: none;
+		font-weight: lighter;
+		@include font-size( 1.6 );
+		line-height: 1;
+		margin-left: 15px;
+
+		a{
+			color: white;
+			text-decoration: none;
 		}
 	}
 }
@@ -25,7 +41,11 @@ body{
 		#top-navigation{
 			background: $color__accent_darker;
 			box-shadow: 0 1px 2px $color__accent;
-		}		
+
+			.site-title-nav{
+				display: inline-block;
+			}
+		}
 	}
 	
 	&.drawer-expanded,
@@ -59,7 +79,6 @@ body{
 		.label{
 			display: block;
 			@include font-size( 1.6 );
-			font-weight: lighter;
 		}
 
 		.title{
@@ -67,4 +86,51 @@ body{
 			color: $color__text_date;
 		}
 	}
+}
+
+/**
+* Tablet adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-tablet ){
+	#top-navigation{
+		padding: 20px;
+
+		.genericon{
+			font-size: 18px;
+			margin: 3px 0;
+		}
+
+		.site-title-nav{
+			@include font-size( 2.4 );
+		}
+	}
+
+	.post-navigation{
+		.nav{
+			display: inline-block;
+			width: 49%;
+			padding-left: 20px;
+
+			a{
+				padding: 35px 0;
+			}
+
+			.label{
+				@include font-size( 1.8 );
+			}
+
+			.title{
+				@include font-size( 1.6 );
+			}
+
+			&:last-child{				
+				border: none;
+
+				&.nav-next{
+					text-align: right;
+					padding-right: 20px;
+				}
+			}
+		}
+	}	
 }

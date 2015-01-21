@@ -156,6 +156,7 @@ textarea {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-size: 1.3rem;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -900,6 +901,18 @@ input[type="submit"]:focus:active {
   background-color: #536d79;
 }
 
+/**
+* Tablet adjustment
+*/
+@media screen and (min-width: 760px) {
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;
@@ -981,23 +994,41 @@ a:hover, a:focus, a:active {
   top: 0;
   left: 0;
   right: 0;
-  padding: 15px 16px 15px 15px;
+  padding: 20px 20px;
   z-index: 50;
 }
 #top-navigation .genericon {
-  font-size: 20px;
   color: white;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
 }
 #top-navigation .genericon .label {
   display: none;
 }
 #top-navigation .genericon.genericon-search {
   float: right;
+  display: none;
+}
+#top-navigation .site-title-nav {
+  display: none;
+  font-weight: lighter;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-left: 15px;
+}
+#top-navigation .site-title-nav a {
+  color: white;
+  text-decoration: none;
 }
 
 body.scrolling #top-navigation {
   background: #455A64;
   box-shadow: 0 1px 2px #607D8B;
+}
+body.scrolling #top-navigation .site-title-nav {
+  display: inline-block;
 }
 body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation {
   display: none;
@@ -1024,13 +1055,52 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   display: block;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: lighter;
 }
 .post-navigation .nav .title {
   display: block;
   color: #979797;
 }
 
+/**
+* Tablet adjustment
+*/
+@media screen and (min-width: 760px) {
+  #top-navigation {
+    padding: 20px;
+  }
+  #top-navigation .genericon {
+    font-size: 18px;
+    margin: 3px 0;
+  }
+  #top-navigation .site-title-nav {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  .post-navigation .nav {
+    display: inline-block;
+    width: 49%;
+    padding-left: 20px;
+  }
+  .post-navigation .nav a {
+    padding: 35px 0;
+  }
+  .post-navigation .nav .label {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .post-navigation .nav .title {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .post-navigation .nav:last-child {
+    border: none;
+  }
+  .post-navigation .nav:last-child.nav-next {
+    text-align: right;
+    padding-right: 20px;
+  }
+}
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -1164,7 +1234,6 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 .drawer-content .drawer-navigation {
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: lighter;
   padding: 15px 15px 15px 50px;
   border-bottom: 1px solid #DFDFDF;
   line-height: 1.8;
@@ -1208,7 +1277,6 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   margin: 0;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: lighter;
 }
 .widget .widget-title {
   font-size: 14px;
@@ -1249,25 +1317,28 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 #masthead {
   background: #607D8B;
   color: white;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 #masthead a {
   color: white;
 }
 #masthead .site-branding {
-  margin: 64px 15px;
+  margin: 20px;
 }
 #masthead .site-title {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 #masthead .site-title a {
   text-decoration: none;
 }
 #masthead .site-description {
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-weight: lighter;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: .5;
 }
 
 /**
@@ -1275,10 +1346,15 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 */
 @media screen and (min-width: 760px) {
   #masthead .site-branding {
-    display: block;
-    width: 660px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 70px 20px;
+  }
+  #masthead .site-title {
+    font-size: 54px;
+    font-size: 5.4rem;
+  }
+  #masthead .site-description {
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 /**
@@ -1296,7 +1372,7 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 10.1 Posts and pages
 --------------------------------------------------------------*/
 #main {
-  margin: 15px;
+  margin: 20px;
 }
 
 .sticky {
@@ -1327,26 +1403,29 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   background: white;
   box-shadow: 0 1px 2px rgba(151, 151, 151, 0.58);
   border-bottom: 1px solid #DFDFDF;
-  padding: 25px 15px 25px 75px;
+  padding: 15px 15px 15px 75px;
   position: relative;
 }
-.hentry.has-post-thumbnail {
-  padding-right: 80px;
-}
 .hentry.has-post-thumbnail .entry-thumbnail {
-  position: absolute;
-  top: 25px;
-  right: 15px;
-  width: 50px;
+  margin-top: 15px;
+  display: block;
+  max-width: 250px;
+  max-height: 150px;
+  overflow: hidden;
   background: white;
-  padding: 2px 2px 0;
-  line-height: 1;
-  box-shadow: 0 0 1px #acacac;
+  line-height: 0;
+  box-shadow: 0 1px 2px #939393;
+}
+.hentry.has-post-thumbnail .entry-thumbnail img {
+  width: 100%;
+}
+.hentry p:last-child {
+  margin-bottom: 0;
 }
 
 .entry-date {
   position: absolute;
-  top: 14px;
+  top: 8px;
   left: 5px;
   width: 55px;
   text-align: center;
@@ -1369,20 +1448,45 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   width: 100%;
 }
 
+.entry-header {
+  display: inline;
+}
+
 .entry-title {
   line-height: 1.3;
-  font-size: 17px;
-  font-size: 1.7rem;
-  font-weight: lighter;
-  margin-bottom: 10px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  display: inline;
 }
 .entry-title a {
   text-decoration: none;
 }
 
+.entry-summary {
+  display: inline;
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #cccccc;
+}
+.entry-summary:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background: #b3b3b3;
+  vertical-align: middle;
+  margin: -2px 5px 0;
+}
+.entry-summary p {
+  display: inline;
+}
+
 .entry-content {
   overflow: hidden;
   line-height: 1.6;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-top: 20px;
 }
 
 .page .hentry,
@@ -1397,12 +1501,13 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 .single .entry-title {
   font-size: 22px;
   font-size: 2.2rem;
-  font-weight: bold;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 .page .entry-footer,
 .single .entry-footer {
   display: block;
-  margin: 0 -15px -25px;
+  margin: 20px -15px -25px;
 }
 .page .cat-links,
 .page .tags-links,
@@ -1501,7 +1606,6 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 .paging-navigation a {
   color: #979797;
   text-decoration: none;
-  font-weight: lighter;
   font-size: 16px;
   font-size: 1.6rem;
 }
@@ -1517,6 +1621,40 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
     margin-left: auto;
   }
 
+  .hentry-separator {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+
+  .hentry {
+    padding-left: 120px;
+    padding-right: 25px;
+  }
+
+  .entry-date {
+    left: 10px;
+    text-align: left;
+    width: 80px;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+
+  .entry-title {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  .entry-summary {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+
+  .entry-content {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
   .page .hentry,
   .single .hentry {
     padding: 25px 60px;
@@ -1527,7 +1665,26 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   }
   .page .entry-footer,
   .single .entry-footer {
-    margin: 0 -60px -25px;
+    margin: 40px -60px -25px;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .page .entry-footer .label,
+  .single .entry-footer .label {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  .page .entry-date,
+  .single .entry-date {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .page .entry-title,
+  .single .entry-title {
+    font-size: 34px;
+    font-size: 3.4rem;
+    margin-bottom: 25px;
+    color: #607D8B;
   }
   .page .cat-links,
   .page .tags-links,
@@ -1540,17 +1697,6 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   .single .cat-links .label,
   .single .tags-links .label {
     left: 45px;
-  }
-
-  .post-navigation .nav {
-    display: inline-block;
-    width: 49%;
-  }
-  .post-navigation .nav:last-child {
-    border: none;
-  }
-  .post-navigation .nav:last-child.nav-next {
-    text-align: right;
   }
 }
 /**
@@ -1604,6 +1750,8 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 .comment-list .comment .comment-body {
   padding: 15px 15px 15px 60px;
   position: relative;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 .comment-list .comment .comment-author {
   text-decoration: none;
@@ -1705,6 +1853,58 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   right: 15px;
 }
 
+/**
+* Tablet adjustment
+*/
+@media screen and (min-width: 760px) {
+  .comments-title {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+
+  .comment-list .comment .avatar {
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    left: 25px;
+  }
+  .comment-list .comment .comment-body {
+    padding: 25px 25px 25px 120px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  .comment-list .comment .comment-author {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .comment-list .comment .comment-meta {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+
+  #respond {
+    padding: 25px;
+  }
+  #respond label {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  #respond input[type="text"],
+  #respond input[type="email"],
+  #respond input[type="url"],
+  #respond textarea {
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+  }
+
+  #reply-title {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+}
 /*--------------------------------------------------------------
 10.x Footer
 --------------------------------------------------------------*/
