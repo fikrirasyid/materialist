@@ -21,12 +21,16 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'materialist' ); ?></a>
 
+	<nav id="top-navigation">
+		<a href="#navigation-drawer" class="genericon genericon-menu"><span class="label"><?php _e( 'Navigation', 'materialist' ); ?></span></a>
+		<a href="#search-form" class="genericon genericon-search"><span class="label"><?php _e( 'Search', 'materialist' ); ?></span></a>
+	</nav>
+
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .site-branding -->
-
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

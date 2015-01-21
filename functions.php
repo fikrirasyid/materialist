@@ -103,6 +103,7 @@ function materialist_scripts() {
     wp_enqueue_style( 'materialist-google-fonts', '//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic' );
 
 	wp_enqueue_style( 'materialist-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'materialist-script', get_template_directory_uri() . '/js/materialist.js', array( 'jquery' ), '20150121' );
 
 	wp_enqueue_script( 'materialist-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

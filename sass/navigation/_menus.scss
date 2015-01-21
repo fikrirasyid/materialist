@@ -1,3 +1,32 @@
+#top-navigation{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 15px 16px 15px 15px;
+	z-index: 50;
+
+	.genericon{
+		font-size: 20px;
+		color: white;
+
+		.label{
+			display: none;
+		}
+
+		&.genericon-search{
+			float: right;
+		}
+	}
+}
+
+body.scrolling{
+	#top-navigation{
+		background: $color__accent_darker;
+		box-shadow: 0 1px 2px $color__accent;
+	}
+}
+
 .post-navigation{
 	padding: 10px 0;
 

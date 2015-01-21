@@ -976,6 +976,30 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+#top-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 16px 15px 15px;
+  z-index: 50;
+}
+#top-navigation .genericon {
+  font-size: 20px;
+  color: white;
+}
+#top-navigation .genericon .label {
+  display: none;
+}
+#top-navigation .genericon.genericon-search {
+  float: right;
+}
+
+body.scrolling #top-navigation {
+  background: #455A64;
+  box-shadow: 0 1px 2px #607D8B;
+}
+
 .post-navigation {
   padding: 10px 0;
 }
@@ -1109,6 +1133,7 @@ a:hover, a:focus, a:active {
 #masthead {
   background: #607D8B;
   color: white;
+  padding-top: 20px;
 }
 #masthead a {
   color: white;
