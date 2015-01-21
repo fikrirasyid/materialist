@@ -1351,21 +1351,27 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   line-height: 1.6;
 }
 
+.page .hentry,
 .single .hentry {
   padding: 25px 15px;
 }
+.page .hentry.post-thumbnail,
 .single .hentry.post-thumbnail {
   padding: 25px 15px;
 }
+.page .entry-title,
 .single .entry-title {
   font-size: 22px;
   font-size: 2.2rem;
   font-weight: bold;
 }
+.page .entry-footer,
 .single .entry-footer {
   display: block;
   margin: 0 -15px -25px;
 }
+.page .cat-links,
+.page .tags-links,
 .single .cat-links,
 .single .tags-links {
   display: block;
@@ -1373,6 +1379,8 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   position: relative;
   padding: 15px 15px 15px 100px;
 }
+.page .cat-links .label,
+.page .tags-links .label,
 .single .cat-links .label,
 .single .tags-links .label {
   position: absolute;
@@ -1386,6 +1394,8 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   font-weight: bold;
   color: #979797;
 }
+.page .cat-links a,
+.page .tags-links a,
 .single .cat-links a,
 .single .tags-links a {
   text-decoration: none;
@@ -1480,6 +1490,10 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 0 0 13px;
+}
+
+.page .comments-title {
+  margin-top: 20px;
 }
 
 #comments {
