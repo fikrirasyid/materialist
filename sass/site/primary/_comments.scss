@@ -44,7 +44,7 @@
 
 			a{
 				text-decoration: none;
-				color: lighten( $color__text-main, 20% );
+				color: $color__text-date;
 			}
 		}
 
@@ -92,6 +92,17 @@
 		display: block;
 		color: $color__text_date;
 		@include font-size( 1.2 );
+	}
+
+	.logged-in-as{
+		color: $color__text-date;
+		@include font-size( 1.1 );
+		margin-top: -7px;
+
+		a{
+			text-decoration: none;
+			// color: $color__text-date;
+		}
 	}
 }
 

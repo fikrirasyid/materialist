@@ -1386,7 +1386,7 @@ a:hover, a:focus, a:active {
 }
 .comment-list .comment .comment-meta a {
   text-decoration: none;
-  color: #999999;
+  color: #979797;
 }
 .comment-list .comment .avatar {
   position: absolute;
@@ -1433,6 +1433,15 @@ a:hover, a:focus, a:active {
   color: #979797;
   font-size: 12px;
   font-size: 1.2rem;
+}
+#respond .logged-in-as {
+  color: #979797;
+  font-size: 11px;
+  font-size: 1.1rem;
+  margin-top: -7px;
+}
+#respond .logged-in-as a {
+  text-decoration: none;
 }
 
 #comments #respond input[type="text"],
