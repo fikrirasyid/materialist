@@ -1231,6 +1231,15 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   display: none;
 }
 
+/**
+* Tablet adjustment
+*/
+@media screen and (min-width: 760px) {
+  .drawer-content {
+    right: auto;
+    width: 320px;
+  }
+}
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -1261,6 +1270,28 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   font-weight: lighter;
 }
 
+/**
+* Tablet adjustment
+*/
+@media screen and (min-width: 760px) {
+  #masthead .site-branding {
+    display: block;
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/**
+* Desktop adjustment
+*/
+@media screen and (min-width: 960px) {
+  #masthead .site-branding {
+    display: block;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
@@ -1333,6 +1364,9 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 .entry-featured-image {
   display: block;
   margin: -25px -15px 15px -15px;
+}
+.entry-featured-image img {
+  width: 100%;
 }
 
 .entry-title {
@@ -1472,6 +1506,64 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   font-size: 1.6rem;
 }
 
+/**
+* Tablet adjustment
+*/
+@media screen and (min-width: 760px) {
+  #main {
+    display: block;
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .page .hentry,
+  .single .hentry {
+    padding: 25px 60px;
+  }
+  .page .entry-featured-image,
+  .single .entry-featured-image {
+    margin: -25px -60px 25px;
+  }
+  .page .entry-footer,
+  .single .entry-footer {
+    margin: 0 -60px -25px;
+  }
+  .page .cat-links,
+  .page .tags-links,
+  .single .cat-links,
+  .single .tags-links {
+    padding: 15px 60px 15px 145px;
+  }
+  .page .cat-links .label,
+  .page .tags-links .label,
+  .single .cat-links .label,
+  .single .tags-links .label {
+    left: 45px;
+  }
+
+  .post-navigation .nav {
+    display: inline-block;
+    width: 49%;
+  }
+  .post-navigation .nav:last-child {
+    border: none;
+  }
+  .post-navigation .nav:last-child.nav-next {
+    text-align: right;
+  }
+}
+/**
+* Desktop adjustment
+*/
+@media screen and (min-width: 960px) {
+  #main {
+    display: block;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
@@ -1660,6 +1752,31 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   font-size: 1.4rem;
 }
 
+/**
+* Tablet adjustment
+*/
+@media screen and (min-width: 760px) {
+  #search-form {
+    padding-right: 15px;
+  }
+  #search-form .search-form {
+    display: block;
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/**
+* Desktop adjustment
+*/
+@media screen and (min-width: 960px) {
+  #search-form .search-form {
+    display: block;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/

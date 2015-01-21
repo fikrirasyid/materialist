@@ -24,3 +24,25 @@
 		font-weight: lighter;
 	}
 }
+
+/**
+* Tablet adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-tablet ){
+	#masthead{
+		.site-branding{
+			@include wrap( 660px );
+		}
+	}
+}
+
+/**
+* Desktop adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-desktop ){
+	#masthead{
+		.site-branding{
+			@include wrap( 940px );
+		}
+	}
+}

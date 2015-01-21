@@ -36,7 +36,7 @@
 			<?php endif; ?>
 		</div><!-- .drawer-content -->
 
-		<div class="drawer-overlay"></div>
+		<div class="drawer-overlay toggle-button" data-target-id="drawer"></div>
 	</div><!-- #drawer -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

@@ -52,3 +52,27 @@
 	text-align: center;
 	@include font-size( 1.4 );
 }
+
+/**
+* Tablet adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-tablet ){
+	#search-form{
+		padding-right: 15px;
+
+		.search-form{
+			@include wrap( 660px );
+		}
+	}
+}
+
+/**
+* Desktop adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-desktop ){
+	#search-form{
+		.search-form{
+			@include wrap( 940px );
+		}
+	}
+}

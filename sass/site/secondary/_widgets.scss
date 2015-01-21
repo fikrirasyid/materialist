@@ -127,3 +127,13 @@
 		display: none;
 	}
 }
+
+/**
+* Tablet adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-tablet ){
+	.drawer-content{
+		right: auto;
+		width: 320px;
+	}
+}
