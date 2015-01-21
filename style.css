@@ -1709,6 +1709,51 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
     margin-right: auto;
     margin-left: auto;
   }
+
+  .hentry {
+    padding-left: 160px;
+  }
+
+  .entry-date {
+    width: 120px;
+    top: 9px;
+  }
+
+  .entry-title {
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+  .entry-title a:hover {
+    text-decoration: underline;
+  }
+
+  .entry-summary {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .single .entry-title,
+  .page .entry-title {
+    padding: 0 95px;
+    display: block;
+  }
+  .single .entry-content,
+  .page .entry-content {
+    padding: 40px 95px;
+  }
+  .single .cat-links,
+  .single .tags-links,
+  .page .cat-links,
+  .page .tags-links {
+    padding: 15px 60px 15px 160px;
+  }
+  .single .cat-links .label,
+  .single .tags-links .label,
+  .page .cat-links .label,
+  .page .tags-links .label {
+    left: 25px;
+  }
 }
 /*--------------------------------------------------------------
 10.2 Asides
@@ -1903,6 +1948,18 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
     font-size: 14px;
     font-size: 1.4rem;
     margin-bottom: 20px;
+  }
+}
+/**
+* Desktop adjustment
+*/
+@media screen and (min-width: 960px) {
+  .comment-list .comment .comment-body {
+    padding: 25px 25px 25px 160px;
+  }
+
+  #respond {
+    padding: 40px 160px;
   }
 }
 /*--------------------------------------------------------------

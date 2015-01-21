@@ -193,3 +193,20 @@
 		margin-bottom: 20px;
 	}
 }
+
+/**
+* Desktop adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-desktop ){
+	.comment-list{
+		.comment{
+			.comment-body{
+				padding: 25px 25px 25px 160px;				
+			}
+		}
+	}
+
+	#respond{
+		padding: 40px 160px;
+	}
+}

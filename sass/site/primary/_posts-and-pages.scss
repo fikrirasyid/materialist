@@ -35,14 +35,8 @@
 	position: relative;
 
 	&.has-post-thumbnail{
-		// padding-right: 80px;
-		// min-height: 88px;
 
 		.entry-thumbnail{
-			// position: absolute;
-			// top: 19px;
-			// right: 15px;
-			// display: none;
 			margin-top: 15px;
 			display: block;
 			max-width: 250px;
@@ -242,10 +236,6 @@
 	.hentry{
 		padding-left: 120px;
 		padding-right: 25px;
-
-		&.has-post-thumbnail{
-
-		}
 	}
 
 	.entry-date{
@@ -316,5 +306,50 @@
 @media screen and ( min-width: $size__breakpoint-desktop ){
 	#main{
 		@include wrap( 940px );
+	}
+
+	.hentry{
+		padding-left: 160px;	
+	}
+
+	.entry-date{
+		width: 120px;
+		top: 9px;
+	}
+
+	.entry-title{
+		@include font-size( 1.9 );
+
+		a{
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.entry-summary{
+		@include font-size( 1.5	 );
+		line-height: 1.6;
+	}
+
+	.single,
+	.page{
+		.entry-title{
+			padding: 0 95px;
+			display: block;
+		}
+
+		.entry-content{
+			padding: 40px 95px;
+		}
+
+		.cat-links,
+		.tags-links{
+			padding: 15px 60px 15px 160px;
+
+			.label{
+				left: 25px;
+			}
+		}
 	}
 }
