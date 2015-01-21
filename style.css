@@ -1361,16 +1361,32 @@ a:hover, a:focus, a:active {
 }
 .comment-list .comment {
   border-bottom: 1px solid #DFDFDF;
+  list-style: none;
 }
 .comment-list .comment .comment-body {
   padding: 15px 15px 15px 60px;
   position: relative;
 }
-.comment-list .comment .comment-author .url {
+.comment-list .comment .comment-author {
   text-decoration: none;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: lighter;
+  font-style: normal;
+}
+.comment-list .comment .comment-author cite {
+  font-style: normal;
+}
+.comment-list .comment .comment-author a {
+  text-decoration: none;
+}
+.comment-list .comment .comment-meta {
+  font-size: 11px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.comment-list .comment .comment-meta a {
+  text-decoration: none;
+  color: #999999;
 }
 .comment-list .comment .avatar {
   position: absolute;
@@ -1380,6 +1396,8 @@ a:hover, a:focus, a:active {
   /* stops bg color from leaking outside the border: */
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 .comment-list .comment .comment-reply-link {
   position: absolute;
@@ -1415,6 +1433,13 @@ a:hover, a:focus, a:active {
   color: #979797;
   font-size: 12px;
   font-size: 1.2rem;
+}
+
+#comments #respond input[type="text"],
+#comments #respond input[type="email"],
+#comments #respond input[type="url"],
+#comments #respond textarea {
+  width: 100%;
 }
 
 #reply-title {

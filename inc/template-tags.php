@@ -332,3 +332,62 @@ function materialist_entry_thumbnail( $post_id = false ){
 	} 
 }
 endif;
+
+/**
+ * Custom callback for displaying comment
+ */
+if( ! function_exists( 'materialist_comment' ) ) :
+function materialist_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	switch ( $comment->comment_type ) :
+		case 'pingback' :
+		case 'trackback' :
+		// Display trackbacks differently than normal comments.
+	?>
+	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+		<p><?php _e( 'Pingback:', 'materialist' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'materialist' ), '<span class="edit-link">', '</span>' ); ?></p>
+	<?php
+			break;
+		default :
+		// Proceed with normal comments.
+		global $post;
+	?>
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<div id="comment-<?php comment_ID(); ?>" class="comment-body">
+			<div class="comment-author vcard">
+				<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+				<?php printf( __( '<cite class="fn">%s</cite>' ), get_comment_author_link() ); ?>
+			</div>
+
+			<?php if ( '0' == $comment->comment_approved ) : ?>
+			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
+			<br />
+			<?php endif; ?>
+
+			<div class="comment-meta commentmetadata">
+				<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
+				<?php echo get_comment_date(); ?>
+				</a>
+
+				<?php edit_comment_link( __( '| Edit', 'materalist' ), '&nbsp;', '' ); ?>
+			</div>
+
+			<?php comment_text( get_comment_id(), array_merge( $args, array( 'add_below' => 'comment', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+
+			<div class="reply">
+				<?php
+					comment_reply_link( array_merge( $args, array(
+						'add_below' => 'comment',
+						'depth'     => $depth,
+						'max_depth' => $args['max_depth'],
+						'before'    => '<div class="reply">',
+						'after'     => '</div>'
+					) ) );
+				?>
+			</div><!-- .reply -->
+		</div><!-- #comment-## -->
+	<?php
+		break;
+	endswitch; // end comment_type check
+}
+endif;

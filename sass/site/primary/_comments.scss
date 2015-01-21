@@ -17,6 +17,7 @@
 
 	.comment{
 		border-bottom: 1px solid $color__border;
+		list-style: none;
 
 		.comment-body{
 			padding: 15px 15px 15px 60px;
@@ -24,10 +25,26 @@
 		}
 
 		.comment-author{
-			.url{
+			text-decoration: none;
+			@include font-size( 1.6 );
+			font-style: normal;
+
+			cite{				
+				font-style: normal;
+			}
+
+			a{
 				text-decoration: none;
-				@include font-size( 1.6 );
-				font-weight: lighter;
+			}
+		}
+
+		.comment-meta{
+			@include font-size( 1.1 );
+			margin-bottom: 15px;
+
+			a{
+				text-decoration: none;
+				color: lighten( $color__text-main, 20% );
 			}
 		}
 
@@ -36,6 +53,8 @@
 			top: 15px;
 			left: 15px;
 			@include border-radius( 50% );
+			width: 30px;
+			height: 30px;
 		}
 
 		.comment-reply-link{
@@ -73,6 +92,17 @@
 		display: block;
 		color: $color__text_date;
 		@include font-size( 1.2 );
+	}
+}
+
+#comments{
+	#respond{
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		textarea{
+			width: 100%;
+		}
 	}
 }
 
