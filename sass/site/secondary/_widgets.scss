@@ -37,6 +37,10 @@
 			font-size: 16px;
 			margin-top: -8px;
 
+			&:hover{
+				opacity: .7;
+			}
+
 			.label{
 				display: none;
 			}
@@ -123,7 +127,7 @@
 		text-decoration: none;
 
 		&:hover{
-			text-decoration: underline;
+			opacity: .7;
 		}
 	}
 

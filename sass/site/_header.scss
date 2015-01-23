@@ -18,6 +18,10 @@
 
 		a{
 			text-decoration: none;
+
+			&:hover{
+				opacity: .7;
+			}
 		}
 	}
 

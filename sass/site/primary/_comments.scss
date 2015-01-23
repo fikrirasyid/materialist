@@ -42,6 +42,10 @@
 
 			a{
 				text-decoration: none;
+
+				&:hover{
+					opacity: .7;
+				}				
 			}
 		}
 
@@ -52,6 +56,10 @@
 			a{
 				text-decoration: none;
 				color: $color__text-date;
+
+				&:hover{
+					opacity: .7;
+				}								
 			}
 		}
 
@@ -71,6 +79,10 @@
 			text-transform: uppercase;
 			text-decoration: none;
 			@include font-size( 1.1 );
+
+			&:hover{
+				opacity: .7;
+			}			
 		}
 
 		.children{
@@ -137,6 +149,10 @@
 	position: absolute;
 	top: 18px;
 	right: 15px;
+
+	&:hover{
+		opacity: .7;
+	}				
 }
 
 /**

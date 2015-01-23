@@ -96,6 +96,11 @@
 
 	a{
 		text-decoration: none;
+			
+		&:hover{
+			text-decoration: underline;
+			color: lighten( $color__accent, 10% );
+		}
 	}
 }
 
@@ -168,6 +173,10 @@
 
 		a{
 			text-decoration: none;
+
+			&:hover{
+				opacity: .7;
+			}
 		}
 	}
 }
@@ -217,6 +226,15 @@
 		color: $color__text-navigation;
 		text-decoration: none;
 		@include font-size( 1.6 );
+
+		&:hover{
+			opacity: .7;
+			
+			&:before,
+			&:after{
+				opacity: .7;
+			}
+		}		
 	}
 }
 

@@ -12,6 +12,10 @@
 		width: 16px;
 		height: 16px;
 
+		&:hover{
+			opacity: .7;
+		}
+
 		.label{
 			display: none;
 		}
@@ -32,6 +36,10 @@
 		a{
 			color: white;
 			text-decoration: none;
+
+			&:hover{
+				opacity: .7;
+			}			
 		}
 	}
 }
@@ -74,6 +82,10 @@ body{
 			text-decoration: none;
 			display: block;
 			padding: 15px 0;
+
+			&:hover{
+				opacity: .7;
+			}			
 		}
 
 		.label{
