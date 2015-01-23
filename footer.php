@@ -10,12 +10,6 @@
 
 	</div><!-- #content -->
 
-	<div id="search-form">
-		<?php get_search_form(); ?>
-
-		<a href="#" class="genericon genericon-close-alt toggle-button" data-target-id="search-form"><span class="label">Close</span></a>
-	</div><!-- #search-form -->
-
 	<div id="drawer">
 		<div class="drawer-content">
 			<div class="drawer-header">

@@ -1009,10 +1009,6 @@ a:hover, a:focus, a:active {
 #top-navigation .genericon .label {
   display: none;
 }
-#top-navigation .genericon.genericon-search {
-  float: right;
-  display: none;
-}
 #top-navigation .site-title-nav {
   display: none;
   font-weight: lighter;
@@ -2129,42 +2125,6 @@ body.scrolling #top-navigation .site-title-nav {
 /*--------------------------------------------------------------
 10.x Footer
 --------------------------------------------------------------*/
-#search-form {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 9px 60px 9px 15px;
-  background: rgba(255, 255, 255, 0.98);
-  z-index: 60;
-  display: none;
-}
-#search-form .search-field {
-  width: 100%;
-  box-sizing: border-box;
-  background: transparent;
-  padding: 5px 10px;
-}
-#search-form .search-submit {
-  display: none;
-}
-#search-form .genericon {
-  font-size: 20px;
-}
-#search-form .genericon .label {
-  display: none;
-}
-#search-form .genericon-close-alt {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  margin-top: -9px;
-}
-
-.scrolling #search-form {
-  border-bottom: 1px solid #455A64;
-}
-
 #colophon {
   border-top: 1px solid #DFDFDF;
   padding: 15px;
@@ -2176,28 +2136,9 @@ body.scrolling #top-navigation .site-title-nav {
 /**
 * Tablet adjustment
 */
-@media screen and (min-width: 760px) {
-  #search-form {
-    padding-right: 15px;
-  }
-  #search-form .search-form {
-    display: block;
-    width: 660px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 /**
 * Desktop adjustment
 */
-@media screen and (min-width: 960px) {
-  #search-form .search-form {
-    display: block;
-    width: 940px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/

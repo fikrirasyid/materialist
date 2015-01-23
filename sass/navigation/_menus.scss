@@ -19,11 +19,6 @@
 		.label{
 			display: none;
 		}
-
-		&.genericon-search{
-			float: right;
-			display: none;
-		}
 	}
 
 	.site-title-nav{
@@ -56,8 +51,7 @@ body{
 		}
 	}
 	
-	&.drawer-expanded,
-	&.search-form-expanded{
+	&.drawer-expanded{
 		#top-navigation{
 			// display: none;			
 		}
