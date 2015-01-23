@@ -704,7 +704,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-.comment-content h1,
+.comment-body h1,
 .entry-content h1 {
   font-size: 24px;
   font-size: 2.4rem;
@@ -716,20 +716,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.8rem;
 }
 @media screen and (min-width: 760px) {
-  .comment-content h1,
+  .comment-body h1,
   .entry-content h1 {
     font-size: 32px;
     font-size: 3.2rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .comment-content h1,
+  .comment-body h1,
   .entry-content h1 {
     font-size: 42px;
     font-size: 4.2rem;
   }
 }
-.comment-content h2,
+.comment-body h2,
 .entry-content h2 {
   font-size: 19px;
   font-size: 1.9rem;
@@ -741,20 +741,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.4rem;
 }
 @media screen and (min-width: 760px) {
-  .comment-content h2,
+  .comment-body h2,
   .entry-content h2 {
     font-size: 26px;
     font-size: 2.6rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .comment-content h2,
+  .comment-body h2,
   .entry-content h2 {
     font-size: 36px;
     font-size: 3.6rem;
   }
 }
-.comment-content h3,
+.comment-body h3,
 .entry-content h3 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -766,20 +766,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.2rem;
 }
 @media screen and (min-width: 760px) {
-  .comment-content h3,
+  .comment-body h3,
   .entry-content h3 {
     font-size: 22px;
     font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .comment-content h3,
+  .comment-body h3,
   .entry-content h3 {
     font-size: 32px;
     font-size: 3.2rem;
   }
 }
-.comment-content h4,
+.comment-body h4,
 .entry-content h4 {
   font-weight: 300;
   color: #455A64;
@@ -790,30 +790,30 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
 }
 @media screen and (min-width: 960px) {
-  .comment-content h4,
+  .comment-body h4,
   .entry-content h4 {
     font-size: 24px;
     font-size: 2.4rem;
   }
 }
-.comment-content p,
+.comment-body p,
 .entry-content p {
   margin-bottom: 1em;
 }
-.comment-content b, .comment-content strong,
+.comment-body b, .comment-body strong,
 .entry-content b,
 .entry-content strong {
   font-weight: 700;
   color: #455A64;
 }
-.comment-content dfn, .comment-content cite, .comment-content em, .comment-content i,
+.comment-body dfn, .comment-body cite, .comment-body em, .comment-body i,
 .entry-content dfn,
 .entry-content cite,
 .entry-content em,
 .entry-content i {
   font-style: italic;
 }
-.comment-content blockquote,
+.comment-body blockquote,
 .entry-content blockquote {
   margin: 1em;
   font-size: 18px;
@@ -823,20 +823,20 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 @media screen and (min-width: 960px) {
-  .comment-content blockquote,
+  .comment-body blockquote,
   .entry-content blockquote {
     font-size: 24px;
     font-size: 2.4rem;
   }
 }
-.comment-content address,
+.comment-body address,
 .entry-content address {
   margin: 0 0 1em;
   font-style: italic;
   line-height: 1.4;
   color: #455A64;
 }
-.comment-content pre,
+.comment-body pre,
 .entry-content pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -848,7 +848,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: auto;
   padding: 1.6em;
 }
-.comment-content code, .comment-content kbd, .comment-content tt, .comment-content var,
+.comment-body code, .comment-body kbd, .comment-body tt, .comment-body var,
 .entry-content code,
 .entry-content kbd,
 .entry-content tt,
@@ -856,7 +856,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   color: #455A64;
 }
-.comment-content code,
+.comment-body code,
 .entry-content code {
   box-shadow: inset 0 0 1px #797979;
   background: #ececec;
@@ -866,7 +866,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-.comment-content pre code,
+.comment-body pre code,
 .entry-content pre code {
   padding: 0;
   background: transparent;
@@ -876,20 +876,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.comment-content abbr, .comment-content acronym,
+.comment-body abbr, .comment-body acronym,
 .entry-content abbr,
 .entry-content acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
-.comment-content mark, .comment-content ins,
+.comment-body mark, .comment-body ins,
 .entry-content mark,
 .entry-content ins {
   background: #fff9c0;
   text-decoration: none;
 }
-.comment-content sup,
-.comment-content sub,
+.comment-body sup,
+.comment-body sub,
 .entry-content sup,
 .entry-content sub {
   font-size: 75%;
@@ -898,33 +898,33 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   vertical-align: baseline;
 }
-.comment-content sup,
+.comment-body sup,
 .entry-content sup {
   bottom: 1ex;
 }
-.comment-content sub,
+.comment-body sub,
 .entry-content sub {
   top: .5ex;
 }
-.comment-content small,
+.comment-body small,
 .entry-content small {
   font-size: 75%;
 }
-.comment-content big,
+.comment-body big,
 .entry-content big {
   font-size: 125%;
 }
-.comment-content ul, .comment-content ol,
+.comment-body ul, .comment-body ol,
 .entry-content ul,
 .entry-content ol {
   margin-left: 1.5em;
   margin-bottom: 1em;
 }
-.comment-content ul li,
+.comment-body ul li,
 .entry-content ul li {
   list-style: disc;
 }
-.comment-content ol li,
+.comment-body ol li,
 .entry-content ol li {
   list-style: decimal;
 }
@@ -1235,6 +1235,7 @@ body.scrolling #top-navigation .site-title-nav {
     display: inline-block;
     width: 49%;
     padding-left: 20px;
+    vertical-align: top;
   }
   .post-navigation .nav a {
     padding: 35px 0;
@@ -1244,8 +1245,8 @@ body.scrolling #top-navigation .site-title-nav {
     font-size: 1.8rem;
   }
   .post-navigation .nav .title {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 15px;
+    font-size: 1.5rem;
   }
   .post-navigation .nav:last-child {
     border: none;
@@ -1569,6 +1570,12 @@ body.scrolling #top-navigation .site-title-nav {
     right: auto;
     width: 320px;
   }
+  .drawer-content .drawer-widgets .widget {
+    padding: 25px 25px 20px 50px;
+  }
+  .drawer-content .drawer-widgets .widget.widget_search {
+    padding-top: 15px;
+  }
 }
 /*--------------------------------------------------------------
 10.0 Content
@@ -1652,7 +1659,7 @@ body.scrolling #top-navigation .site-title-nav {
 .page-header .taxonomy-description {
   font-size: 12px;
   font-size: 1.2rem;
-  color: #adadad;
+  color: #979797;
   font-weight: 300;
 }
 .page-header .taxonomy-description p {
@@ -1784,13 +1791,19 @@ body.scrolling #top-navigation .site-title-nav {
 .single .hentry.post-thumbnail {
   padding: 25px 15px;
 }
+.page .entry-header,
+.single .entry-header {
+  display: block;
+}
 .page .entry-title,
 .single .entry-title {
-  color: #455A64;
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: normal;
   margin-bottom: 20px;
+  display: block;
+  color: #607D8B;
+  font-weight: 300;
 }
 .page .entry-footer,
 .single .entry-footer {
@@ -1921,17 +1934,30 @@ body.scrolling #top-navigation .site-title-nav {
     margin-left: auto;
   }
 
+  .page-header {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .page-header .page-title {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+  .page-header .taxonomy-description {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+
   .hentry-separator {
     font-size: 14px;
     font-size: 1.4rem;
   }
 
   .hentry {
-    padding-left: 120px;
-    padding-right: 25px;
+    padding: 25px 25px 25px 120px;
   }
 
   .entry-date {
+    top: 12px;
     left: 10px;
     text-align: left;
     width: 80px;
@@ -1965,7 +1991,7 @@ body.scrolling #top-navigation .site-title-nav {
   }
   .page .entry-footer,
   .single .entry-footer {
-    margin: 40px -60px -25px;
+    margin: 50px -60px -25px;
     font-size: 14px;
     font-size: 1.4rem;
   }
@@ -1984,7 +2010,7 @@ body.scrolling #top-navigation .site-title-nav {
     font-size: 34px;
     font-size: 3.4rem;
     margin-bottom: 25px;
-    color: #607D8B;
+    padding-top: 20px;
   }
   .page .cat-links,
   .page .tags-links,
@@ -2188,10 +2214,10 @@ body.scrolling #top-navigation .site-title-nav {
   text-decoration: none;
 }
 #respond p {
-  margin-bottom: 1.4em;
+  margin-bottom: 2em;
 }
 #respond p.form-submit {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 #comments #respond input[type="text"],
@@ -2215,6 +2241,9 @@ body.scrolling #top-navigation .site-title-nav {
   position: absolute;
   top: 18px;
   right: 15px;
+  font-weight: 300;
+  font-size: 11px;
+  font-size: 1.1rem;
 }
 #cancel-comment-reply-link:hover {
   opacity: .7;
@@ -2232,11 +2261,17 @@ body.scrolling #top-navigation .site-title-nav {
   .comment-list .comment .avatar {
     width: 50px;
     height: 50px;
-    top: 25px;
+    top: 48px;
     left: 25px;
   }
+  .comment-list .comment .comment-reply-link {
+    top: 40px;
+    right: 40px;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
   .comment-list .comment .comment-body {
-    padding: 25px 25px 25px 120px;
+    padding: 40px 40px 40px 120px;
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 1.8;
@@ -2251,7 +2286,7 @@ body.scrolling #top-navigation .site-title-nav {
   }
 
   #respond {
-    padding: 25px;
+    padding: 60px;
   }
   #respond label {
     font-size: 14px;
@@ -2263,7 +2298,14 @@ body.scrolling #top-navigation .site-title-nav {
   #respond textarea {
     font-size: 16px;
     font-size: 1.6rem;
-    padding: 10px 20px;
+    padding: 10px;
+  }
+
+  #cancel-comment-reply-link {
+    right: 60px;
+    top: 60px;
+    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   #reply-title {

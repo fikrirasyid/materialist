@@ -204,5 +204,15 @@
 	.drawer-content{
 		right: auto;
 		width: 320px;
+
+		.drawer-widgets{
+			.widget{
+				padding: 25px 25px 20px 50px;				
+
+				&.widget_search{
+					padding-top: 15px;
+				}
+			}
+		}
 	}
 }

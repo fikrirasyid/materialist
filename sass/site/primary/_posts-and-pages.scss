@@ -13,7 +13,7 @@
 
 	.taxonomy-description{
 		@include font-size( 1.2 );
-		color: darken( $color__background-body, 30% );
+		color: $color__text-date;
 		font-weight: 300;
 
 		p{
@@ -160,11 +160,17 @@
 		}
 	}
 
+	.entry-header{		
+		display: block;
+	}
+
 	.entry-title{
-		color: $color__accent_darker;
 		@include font-size( 2.4 );
 		font-weight: normal;
 		margin-bottom: 20px;
+		display: block;
+		color: $color__accent;
+		font-weight: 300;
 	}
 
 	.entry-footer{
@@ -267,16 +273,30 @@
 		@include wrap( 660px );
 	}
 
+	.page-header{
+		padding-top: 30px;
+		padding-bottom: 60px;
+
+		.page-title{
+			@include font-size( 3.2 );
+		}
+
+		.taxonomy-description{
+			@include font-size( 1.6 );
+		}
+	}
+
+
 	.hentry-separator{
 		@include font-size( 1.4 );
 	}
 
 	.hentry{
-		padding-left: 120px;
-		padding-right: 25px;
+		padding: 25px 25px 25px 120px;
 	}
 
 	.entry-date{
+		top: 12px;
 		left: 10px;
 		text-align: left;
 		width: 80px;
@@ -307,7 +327,7 @@
 		}
 
 		.entry-footer{
-			margin:40px -60px -25px;
+			margin:50px -60px -25px;
 			@include font-size( 1.4 );
 
 			.label{
@@ -322,7 +342,7 @@
 		.entry-title{
 			@include font-size( 3.4 );
 			margin-bottom: 25px;
-			color: $color__accent;
+			padding-top: 20px;
 		}
 
 		.cat-links,
