@@ -1,70 +1,171 @@
-p {
-	margin-bottom: 1.5em;
+@mixin copy{
+	h1{
+		// font-weight: 300;
+		@include font-size( 2.4 );
+		color: $color__accent_darker;
+		line-height: 1.2;
+		margin-top: 1em;
+		margin-bottom: .4em;
+
+		@include font-size( 2.8 );
+		@include font-size-tablet( 3.2 );
+		@include font-size-desktop( 4.2 );
+	}
+
+	h2{
+		// font-weight: 300;
+		@include font-size( 1.9 );
+		color: $color__accent_darker;
+		line-height: 1.3;
+		margin-top: 1em;
+		margin-bottom: .4em;
+
+		@include font-size( 2.4 );
+		@include font-size-tablet( 2.6 );
+		@include font-size-desktop( 3.6 );
+	}
+
+	h3{
+		// font-weight: 300;
+		@include font-size( 1.6 );
+		color: $color__accent_darker;
+		line-height: 1.3;
+		margin-top: 1em;
+		margin-bottom: .4em;
+
+
+		@include font-size( 2.2 );
+		@include font-size-tablet( 2.2 );
+		@include font-size-desktop( 3.2 );
+	}
+
+	h4{
+		font-weight: 300;
+		color: $color__accent_darker;
+		line-height: 1.4;
+		margin-top: .4em;
+		margin-bottom: .4em;
+
+		@include font-size( 2 );
+		@include font-size-desktop( 2.4 );
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	b, strong {
+		font-weight: 700;
+		color: $color__accent_darker;
+	}
+
+	dfn, cite, em, i {
+		font-style: italic;
+	}
+
+	blockquote {
+		margin: 1em;
+		@include font-size( 1.8 );
+		font-weight: 300;
+		color: lighten( $color__text_main, 25% );
+		line-height: 1.6;
+
+		@include font-size-desktop( 2.4 );
+	}
+
+	address {
+		margin: 0 0 1em;
+		font-style: italic;
+		line-height: 1.4;
+		color: $color__accent_darker;
+	}
+
+	pre {
+		background: $color__background-pre;
+		font-family: $font__pre;
+		@include font-size(1.5);
+		line-height: $font__line-height-pre;
+		margin-bottom: 1.6em;
+		max-width: 100%;
+		overflow: auto;
+		padding: 1.6em;
+	}
+
+	code, kbd, tt, var {
+		font-family: $font__code;
+		color: $color__accent_darker;
+	}
+
+	code{
+		box-shadow: inset 0 0 1px darken( $color__border, 40% );
+		background: lighten( $color__border, 5% );
+		padding: 0 3px;
+		@include border-radius( 3px );
+	}
+
+	pre{
+		code{
+			padding: 0;
+			background: transparent;
+			box-shadow: none;
+			@include border-radius( 0 );
+		}
+	}
+
+	abbr, acronym {
+		border-bottom: 1px dotted $color__border-abbr;
+		cursor: help;
+	}
+
+	mark, ins {
+		background: $color__background-ins;
+		text-decoration: none;
+	}
+
+	sup,
+	sub {
+		font-size: 75%;
+		height: 0;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+	}
+
+	sup {
+		bottom: 1ex;
+	}
+
+	sub {
+		top: .5ex;
+	}
+
+	small {
+		font-size: 75%;
+	}
+
+	big {
+		font-size: 125%;
+	}	
+
+	ul,ol{
+		margin-left: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	ul{
+		li{
+			list-style: disc;
+		}
+	}
+
+	ol{
+		li{
+			list-style: decimal;
+		}
+	}
 }
 
-b, strong {
-	font-weight: bold;
-}
-
-dfn, cite, em, i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(1.5);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code, kbd, tt, var {
-	@include font-size(1.5);
-	font-family: $font__code;
-}
-
-abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
-}
-
-mark, ins {
-	background: $color__background-ins;
-	text-decoration: none;
-}
-
-sup,
-sub {
-	font-size: 75%;
-	height: 0;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	bottom: 1ex;
-}
-
-sub {
-	top: .5ex;
-}
-
-small {
-	font-size: 75%;
-}
-
-big {
-	font-size: 125%;
+.comment-content,
+.entry-content{
+	@include copy;	
 }

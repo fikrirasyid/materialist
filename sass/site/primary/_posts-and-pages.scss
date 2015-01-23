@@ -162,7 +162,8 @@
 	}
 
 	.entry-title{
-		@include font-size( 2.2 );
+		color: $color__accent_darker;
+		@include font-size( 2.4 );
 		font-weight: normal;
 		margin-bottom: 20px;
 	}
