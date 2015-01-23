@@ -41,7 +41,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php printf( __( '%1$s by %2$s.', 'materialist' ), '<a href="http://fikrirasy.id/portfolio/materialist/">Materialist</a>', '<a href="http://fikrirasy.id" rel="designer">Fikri Rasyid</a>' ); ?>
+
+			<a href="<?php echo esc_url( 'http://wordpress.org' ); ?>"><?php printf( __( 'Proudly powered by %s', 'materialist' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( __( 'Theme: %1$s', 'materialist' ), '<a href="http://fikrirasy.id/portfolio/materialist/">Materialist</a>' ); ?>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
