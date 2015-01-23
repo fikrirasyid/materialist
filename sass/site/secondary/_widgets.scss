@@ -121,6 +121,14 @@
 
 	a{
 		text-decoration: none;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	select{
+		width: 100%;
 	}
 }
 
@@ -138,7 +146,6 @@
 
 /* List widget */
 .widget_recent_entries,
-.widget_categories,
 .widget_pages,
 .widget_meta,
 .widget_nav_menu{
@@ -150,6 +157,39 @@
 				right: -25px;
 			}
 		}
+	}
+}
+
+/* RSS Widget */
+.widget_rss{
+	li{
+		.rsswidget{
+			@include font-size( 1.4 );
+
+			&:after{
+				content: '';
+				display: inline-block;
+				width: 15px;
+				height: 1px;
+				background: lighten( $color__text-main, 30% );
+				vertical-align: middle;
+				margin: -2px 5px 0;
+			}		
+		}		
+	}
+	
+	.rss-date,
+	.rssSummary{
+		@include font-size( 1.3 );
+		color: lighten( $color__text-main, 40% );
+	}
+
+	cite{
+		font-style: normal;
+		@include font-size( 1.1 );
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #999;
 	}
 }
 

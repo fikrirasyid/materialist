@@ -77,6 +77,8 @@
 
 	&:hover,
 	&:active{
+		text-decoration: none;
+		
 		&:before{
 			display: block;
 		}

@@ -1256,6 +1256,9 @@ body.scrolling #top-navigation .site-title-nav {
   left: -50%;
   opacity: .2;
 }
+.drawer-content .drawer-navigation a:hover, .drawer-content .drawer-navigation a:active {
+  text-decoration: none;
+}
 .drawer-content .drawer-navigation a:hover:before, .drawer-content .drawer-navigation a:active:before {
   display: block;
 }
@@ -1305,6 +1308,12 @@ body.scrolling #top-navigation .site-title-nav {
 .widget a {
   text-decoration: none;
 }
+.widget a:hover {
+  text-decoration: underline;
+}
+.widget select {
+  width: 100%;
+}
 
 /* Search widget */
 .widget_search .search-field {
@@ -1317,7 +1326,6 @@ body.scrolling #top-navigation .site-title-nav {
 
 /* List widget */
 .widget_recent_entries li a,
-.widget_categories li a,
 .widget_pages li a,
 .widget_meta li a,
 .widget_nav_menu li a {
@@ -1326,7 +1334,6 @@ body.scrolling #top-navigation .site-title-nav {
   position: relative;
 }
 .widget_recent_entries li a:before,
-.widget_categories li a:before,
 .widget_pages li a:before,
 .widget_meta li a:before,
 .widget_nav_menu li a:before {
@@ -1340,9 +1347,16 @@ body.scrolling #top-navigation .site-title-nav {
   left: -50%;
   opacity: .2;
 }
+.widget_recent_entries li a:hover, .widget_recent_entries li a:active,
+.widget_pages li a:hover,
+.widget_pages li a:active,
+.widget_meta li a:hover,
+.widget_meta li a:active,
+.widget_nav_menu li a:hover,
+.widget_nav_menu li a:active {
+  text-decoration: none;
+}
 .widget_recent_entries li a:hover:before, .widget_recent_entries li a:active:before,
-.widget_categories li a:hover:before,
-.widget_categories li a:active:before,
 .widget_pages li a:hover:before,
 .widget_pages li a:active:before,
 .widget_meta li a:hover:before,
@@ -1352,11 +1366,39 @@ body.scrolling #top-navigation .site-title-nav {
   display: block;
 }
 .widget_recent_entries li a:before,
-.widget_categories li a:before,
 .widget_pages li a:before,
 .widget_meta li a:before,
 .widget_nav_menu li a:before {
   right: -25px;
+}
+
+/* RSS Widget */
+.widget_rss li .rsswidget {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.widget_rss li .rsswidget:after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background: #b3b3b3;
+  vertical-align: middle;
+  margin: -2px 5px 0;
+}
+.widget_rss .rss-date,
+.widget_rss .rssSummary {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #cccccc;
+}
+.widget_rss cite {
+  font-style: normal;
+  font-size: 11px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
 }
 
 /**
