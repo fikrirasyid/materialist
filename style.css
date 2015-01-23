@@ -994,7 +994,7 @@ a:hover, a:focus, a:active {
   top: 0;
   left: 0;
   right: 0;
-  padding: 20px 20px;
+  padding: 21px 20px 19px;
   z-index: 50;
 }
 #top-navigation .genericon {
@@ -1029,9 +1029,6 @@ body.scrolling #top-navigation {
 }
 body.scrolling #top-navigation .site-title-nav {
   display: inline-block;
-}
-body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation {
-  display: none;
 }
 
 .post-navigation {
@@ -1205,35 +1202,30 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
   overflow-y: auto;
 }
 .drawer-content .drawer-header {
-  padding: 12px 15px 12px 60px;
+  padding: 21px 15px 21px 54px;
   font-size: 16px;
   font-size: 1.6rem;
-  color: #607D8B;
+  color: #455A64;
   border-bottom: 1px solid #DFDFDF;
   position: relative;
+  font-weight: 300;
 }
-.drawer-content .drawer-header:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 45px;
-  width: 1px;
-  background: #DFDFDF;
+.drawer-content .drawer-header .site-name {
+  line-height: 1;
 }
 .drawer-content .drawer-header .toggle-button {
   position: absolute;
   top: 50%;
-  left: 12px;
-  font-size: 20px;
+  left: 19px;
+  font-size: 16px;
   margin-top: -8px;
 }
 .drawer-content .drawer-header .toggle-button .label {
   display: none;
 }
 .drawer-content .drawer-navigation {
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   padding: 15px 15px 15px 50px;
   border-bottom: 1px solid #DFDFDF;
   line-height: 1.8;
@@ -1243,16 +1235,36 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 }
 .drawer-content .drawer-navigation li {
   list-style: none;
+  padding: 7px 0;
+}
+.drawer-content .drawer-navigation li.page_item_has_children {
+  padding-bottom: 0;
 }
 .drawer-content .drawer-navigation a {
   text-decoration: none;
+  display: block;
+  position: relative;
+}
+.drawer-content .drawer-navigation a:before {
+  display: none;
+  background: #dfdfdf;
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: -15px;
+  bottom: -7px;
+  left: -50%;
+  opacity: .2;
+}
+.drawer-content .drawer-navigation a:hover:before, .drawer-content .drawer-navigation a:active:before {
+  display: block;
 }
 .drawer-content .drawer-navigation .children {
   font-size: 12px;
   font-size: 1.2rem;
-  font-weight: bold;
-  margin-left: 20px;
-  text-transform: uppercase;
+  font-weight: 300;
+  margin-left: 15px;
+  padding-top: 7px;
   line-height: 2.2;
 }
 .drawer-content .drawer-widgets .widget {
@@ -1272,17 +1284,21 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 
 .widget {
   line-height: 1.7;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 .widget ul, .widget ol {
   margin: 0;
-  font-size: 16px;
-  font-size: 1.6rem;
+}
+.widget ul li, .widget ol li {
+  list-style: none;
+  padding: 7px 0;
 }
 .widget .widget-title {
   font-size: 14px;
   font-size: 1.4rem;
   color: #455A64;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -1297,6 +1313,50 @@ body.drawer-expanded #top-navigation, body.search-form-expanded #top-navigation 
 }
 .widget_search .search-submit {
   display: none;
+}
+
+/* List widget */
+.widget_recent_entries li a,
+.widget_categories li a,
+.widget_pages li a,
+.widget_meta li a,
+.widget_nav_menu li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.widget_recent_entries li a:before,
+.widget_categories li a:before,
+.widget_pages li a:before,
+.widget_meta li a:before,
+.widget_nav_menu li a:before {
+  display: none;
+  background: #dfdfdf;
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: -15px;
+  bottom: -7px;
+  left: -50%;
+  opacity: .2;
+}
+.widget_recent_entries li a:hover:before, .widget_recent_entries li a:active:before,
+.widget_categories li a:hover:before,
+.widget_categories li a:active:before,
+.widget_pages li a:hover:before,
+.widget_pages li a:active:before,
+.widget_meta li a:hover:before,
+.widget_meta li a:active:before,
+.widget_nav_menu li a:hover:before,
+.widget_nav_menu li a:active:before {
+  display: block;
+}
+.widget_recent_entries li a:before,
+.widget_categories li a:before,
+.widget_pages li a:before,
+.widget_meta li a:before,
+.widget_nav_menu li a:before {
+  right: -25px;
 }
 
 /**

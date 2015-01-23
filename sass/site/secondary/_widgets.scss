@@ -19,27 +19,22 @@
 	overflow-y: auto;
 
 	.drawer-header{
-		padding: 12px 15px 12px 60px;
+		padding: 21px 15px 21px 54px;
 		@include font-size( 1.6 );
-		color: $color__accent;
+		color: $color__accent_darker;
 		border-bottom: 1px solid $color__border;
 		position: relative;
+		font-weight: 300;
 
-		&:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 45px;
-			width: 1px;
-			background: $color__border;
+		.site-name{
+			line-height: 1;
 		}
 
 		.toggle-button{
 			position: absolute;
 			top: 50%;
-			left: 12px;
-			font-size: 20px;
+			left: 19px;
+			font-size: 16px;
 			margin-top: -8px;
 
 			.label{
@@ -49,10 +44,11 @@
 	}
 
 	.drawer-navigation{
-		@include font-size( 1.8 );
+		@include font-size( 1.4 );
 		padding: 15px 15px 15px 50px;
 		border-bottom: 1px solid $color__border;
 		line-height: 1.8;
+		// font-weight: 300;
 
 		ul{
 			margin: 0;
@@ -60,18 +56,27 @@
 
 		li{
 			list-style: none;
+			padding: 7px 0;
+
+			&.page_item_has_children{
+				padding-bottom: 0;
+			}
 		}
 
 		a{
-			text-decoration: none;
+			@include widget_link_ux;
 		}
 
 		.children{
 			@include font-size( 1.2 );
-			font-weight: bold;
-			margin-left: 20px;
-			text-transform: uppercase;
+			font-weight: 300;
+			margin-left: 15px;
+			padding-top: 7px;
 			line-height: 2.2;
+
+			li{
+				// list-style: disc;
+			}
 		}
 	}
 
@@ -95,16 +100,21 @@
 
 .widget {
 	line-height: 1.7;
+	@include font-size( 1.4 );
 
 	ul,ol{
 		margin: 0;
-		@include font-size( 1.6 );
+
+		li{
+			list-style: none;
+			padding: 7px 0;
+		}
 	}
 
 	.widget-title{
 		@include font-size( 1.4 );
 		color: $color__accent_darker;
-		font-weight: bold;
+		font-weight: 700;
 		margin-bottom: 10px;
 		text-transform: uppercase;
 	}
@@ -123,6 +133,23 @@
 
 	.search-submit {
 		display: none;
+	}
+}
+
+/* List widget */
+.widget_recent_entries,
+.widget_categories,
+.widget_pages,
+.widget_meta,
+.widget_nav_menu{
+	li{
+		a{
+			@include widget_link_ux;
+
+			&:before{
+				right: -25px;
+			}
+		}
 	}
 }
 

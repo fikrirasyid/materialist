@@ -56,3 +56,29 @@
 		@include font-size( $size );
 	}	
 }
+
+// Widget link behavior
+@mixin widget_link_ux{
+	text-decoration: none;
+	display: block;
+	position: relative;
+
+	&:before{
+		display: none;
+		background: #dfdfdf;
+		content: '';
+		position: absolute;
+		top: -7px;
+		right: -15px;
+		bottom: -7px;
+		left: -50%;
+		opacity: .2;
+	}
+
+	&:hover,
+	&:active{
+		&:before{
+			display: block;
+		}
+	}	
+}
