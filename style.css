@@ -1492,6 +1492,25 @@ body.scrolling #top-navigation .site-title-nav {
   margin: 20px;
 }
 
+.page-header {
+  padding-bottom: 1.5em;
+}
+.page-header .page-title {
+  font-size: 22px;
+  font-size: 2.2rem;
+  color: #607D8B;
+  font-weight: 300;
+}
+.page-header .taxonomy-description {
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #adadad;
+  font-weight: 300;
+}
+.page-header .taxonomy-description p {
+  margin-bottom: 0;
+}
+
 .sticky {
   display: block;
 }

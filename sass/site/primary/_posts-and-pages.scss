@@ -2,6 +2,26 @@
 	margin: 20px;
 }
 
+.page-header{
+	padding-bottom: 1.5em;
+
+	.page-title{
+		@include font-size( 2.2 );
+		color: $color__accent;
+		font-weight: 300;
+	}
+
+	.taxonomy-description{
+		@include font-size( 1.2 );
+		color: darken( $color__background-body, 30% );
+		font-weight: 300;
+
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
+
 .sticky {
 	display: block;
 }
