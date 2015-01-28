@@ -1098,6 +1098,10 @@ textarea {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 7px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -1119,6 +1123,8 @@ textarea {
   /* Improves readability and alignment in all browsers */
   width: 100%;
   padding: 10px 10px;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 /*--------------------------------------------------------------
@@ -2320,8 +2326,8 @@ body.admin-bar.scrolling .drawer-content {
 }
 #respond .logged-in-as {
   color: #979797;
-  font-size: 11px;
-  font-size: 1.1rem;
+  font-size: 12px;
+  font-size: 1.2rem;
   margin-top: -7px;
 }
 #respond .logged-in-as a {

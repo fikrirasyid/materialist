@@ -28,6 +28,9 @@ textarea {
 	border: none;
 	border-bottom: 1px solid $color__border-input;
 	padding: 7px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    @include font-size( 1.6 );
 
 	&:focus{
 		color: $color__text-input-focus;
@@ -43,4 +46,6 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
 	padding: 10px 10px;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
