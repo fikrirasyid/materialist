@@ -1937,7 +1937,33 @@ body.admin-bar.scrolling .drawer-content {
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+.page-links .page-links-title {
+  padding-right: 5px;
+}
+.page-links a {
+  text-decoration: none;
+}
+.page-links a:hover {
+  opacity: .8;
+}
+.page-links a:active {
+  opacity: .6;
+}
+.page-links .page-link {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  color: #c6c6c6;
+}
+.page-links a .page-link {
+  border: none;
+  color: #607D8B;
 }
 
 .paging-navigation {
@@ -2057,6 +2083,10 @@ body.admin-bar.scrolling .drawer-content {
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 1.8;
+  }
+
+  .page-links {
+    margin-top: 3em;
   }
 
   .page .hentry,

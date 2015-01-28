@@ -25,8 +25,9 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'materialist' ),
+				'before' => '<div class="page-links"><span class="page-links-title">'. __( 'Pages:', 'materialist' ) .'</span>',
 				'after'  => '</div>',
+				'pagelink' => '<span class="page-link">%</span>'
 			) );
 		?>
 	</div><!-- .entry-content -->

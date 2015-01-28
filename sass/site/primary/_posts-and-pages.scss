@@ -240,7 +240,40 @@
 
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	text-transform: uppercase;
+	@include font-size( 1.4 );
+	font-weight: 700;
+	margin-top: 1.5em;
+
+	.page-links-title{
+		padding-right: 5px;
+	}
+	
+	a{
+		text-decoration: none;
+
+		&:hover{
+			opacity: .8;
+		}
+
+		&:active{
+			opacity: .6;
+		}
+	}
+
+	.page-link{
+		display: inline-block;
+		width: 20px;
+		text-align: center;
+		color: darken( $color__border, 10% );
+	}
+
+	a{
+		.page-link{
+			border: none;
+			color: $color__accent;
+		}
+	}
 }
 
 .paging-navigation{
@@ -335,6 +368,10 @@
 	.entry-content{
 		@include font-size( 1.5 );
 		line-height: 1.8;
+	}
+
+	.page-links{
+		margin-top: 3em;
 	}
 
 	.page,
