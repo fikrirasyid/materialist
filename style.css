@@ -2584,6 +2584,12 @@ body.admin-bar.scrolling .drawer-content {
   display: block;
 }
 
+/* Loading bar positioning */
+.infinite-loader {
+  width: 28px;
+  margin: 2em auto 0;
+}
+
 /*--------------------------------------------------------------
 12.0 Media
 --------------------------------------------------------------*/
