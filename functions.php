@@ -74,6 +74,12 @@ function materialist_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Adding editor style
+	add_editor_style( array(
+		'//fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400',
+		'editor.css'
+	) );	
 }
 endif; // materialist_setup
 add_action( 'after_setup_theme', 'materialist_setup' );
