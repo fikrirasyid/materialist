@@ -2387,8 +2387,8 @@ body.admin-bar.scrolling .drawer-content {
 #respond p {
   margin-bottom: 2em;
 }
-#respond p.form-submit {
-  margin-bottom: 1em;
+#respond p.comment-subscription-form {
+  margin-bottom: .5em;
 }
 
 #comments #respond input[type="text"],
