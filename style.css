@@ -1605,6 +1605,9 @@ body.admin-bar.scrolling .drawer-content {
 * Admin bar tablet screen adjustment
 */
 @media screen and (min-width: 783px) {
+  body.admin-bar .drawer-content {
+    top: 32px;
+  }
   body.admin-bar.scrolling .drawer-content {
     top: 32px;
   }

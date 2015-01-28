@@ -233,6 +233,10 @@ body{
 @media screen and ( min-width: 783px ){
 	body{
 		&.admin-bar{
+			.drawer-content{
+				top: 32px;
+			}
+			
 			&.scrolling{
 				.drawer-content{
 					top: 32px;
