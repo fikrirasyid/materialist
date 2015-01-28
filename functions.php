@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 725; /* pixels */
 }
 
 if ( ! function_exists( 'materialist_setup' ) ) :
@@ -66,14 +66,8 @@ function materialist_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
+		'aside'
 	) );
-
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'materialist_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 
 	// Adding editor style
 	add_editor_style( array(
@@ -109,6 +103,7 @@ function materialist_scripts() {
     wp_enqueue_style( 'materialist-google-fonts', '//fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400' );
 
 	wp_enqueue_style( 'materialist-style', get_stylesheet_uri() );
+	
 	wp_enqueue_script( 'materialist-script', get_template_directory_uri() . '/js/materialist.js', array( 'jquery' ), '20150121' );
 
 	wp_enqueue_script( 'materialist-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
