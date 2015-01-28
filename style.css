@@ -2531,12 +2531,16 @@ object {
 
 .wp-caption-text {
   text-align: center;
+  font-size: .9em;
+  line-height: 1.4;
+  color: #a6a6a6;
 }
 
 /*--------------------------------------------------------------
 12.2 Galleries
 --------------------------------------------------------------*/
 .gallery {
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
@@ -2545,6 +2549,12 @@ object {
   text-align: center;
   vertical-align: top;
   width: 100%;
+}
+.gallery-item figcaption {
+  padding-bottom: 1.5em;
+  font-size: .9em;
+  line-height: 1.4;
+  color: #a6a6a6;
 }
 
 .gallery-columns-2 .gallery-item {
