@@ -8,7 +8,7 @@
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
-			$( '.site-title a' ).text( to );
+			$( '.site-title a, .site-title-nav a, .drawer-header .site-name' ).text( to );
 		} );
 	} );
 	wp.customize( 'blogdescription', function( value ) {
