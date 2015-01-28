@@ -1385,7 +1385,7 @@ body.admin-bar.scrolling #top-navigation {
   bottom: 0;
   left: -100%;
   background: white;
-  box-shadow: 1px 0 2px #4a4a4a;
+  box-shadow: 1px 0 10px #4a4a4a;
   z-index: 70;
   overflow-y: auto;
 }
