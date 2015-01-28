@@ -144,6 +144,13 @@ add_filter( 'excerpt_more', 'materialist_excerpt_more' );
 //require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Load simple color adjuster library
+ */
+if( ! class_exists( 'Simple_Color_Adjuster' ) ){
+	require get_template_directory() . '/inc/simple-color-adjuster.php';
+}
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
