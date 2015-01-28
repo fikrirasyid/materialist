@@ -712,21 +712,22 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-top: 1em;
   margin-bottom: .4em;
+  font-weight: 300;
   font-size: 28px;
   font-size: 2.8rem;
 }
 @media screen and (min-width: 760px) {
   .comment-body h1,
   .entry-content h1 {
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 30px;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 960px) {
   .comment-body h1,
   .entry-content h1 {
-    font-size: 42px;
-    font-size: 4.2rem;
+    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
 .comment-body h2,
@@ -750,8 +751,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 960px) {
   .comment-body h2,
   .entry-content h2 {
-    font-size: 36px;
-    font-size: 3.6rem;
+    font-size: 28px;
+    font-size: 2.8rem;
   }
 }
 .comment-body h3,
@@ -765,20 +766,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   font-size: 2.2rem;
 }
-@media screen and (min-width: 760px) {
-  .comment-body h3,
-  .entry-content h3 {
-    font-size: 22px;
-    font-size: 2.2rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .comment-body h3,
-  .entry-content h3 {
-    font-size: 32px;
-    font-size: 3.2rem;
-  }
-}
 .comment-body h4,
 .entry-content h4 {
   font-weight: 300;
@@ -788,13 +775,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .4em;
   font-size: 20px;
   font-size: 2rem;
-}
-@media screen and (min-width: 960px) {
-  .comment-body h4,
-  .entry-content h4 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
 }
 .comment-body p,
 .entry-content p {
@@ -920,13 +900,32 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1.5em;
   margin-bottom: 1em;
 }
-.comment-body ul li,
-.entry-content ul li {
+.comment-body ul > li,
+.entry-content ul > li {
   list-style: disc;
 }
-.comment-body ol li,
-.entry-content ol li {
+.comment-body ol > li,
+.entry-content ol > li {
   list-style: decimal;
+}
+.comment-body table,
+.entry-content table {
+  border-top: 1px solid #DFDFDF;
+  margin: 2em 0;
+  background: white;
+}
+.comment-body table thead td,
+.entry-content table thead td {
+  font-weight: bold;
+  background: #ececec;
+}
+.comment-body table tr td, .comment-body table th td,
+.entry-content table tr td,
+.entry-content table th td {
+  border-bottom: 1px solid #DFDFDF;
+  padding: .7em .7em .65em;
+  font-size: .9em;
+  line-height: 1.4;
 }
 
 /*--------------------------------------------------------------
@@ -1184,6 +1183,12 @@ body.scrolling #top-navigation {
 body.scrolling #top-navigation .site-title-nav {
   display: inline-block;
 }
+body.admin-bar #top-navigation {
+  top: 46px;
+}
+body.admin-bar.scrolling #top-navigation {
+  top: 0;
+}
 
 .post-navigation {
   padding: 10px 0;
@@ -1215,6 +1220,25 @@ body.scrolling #top-navigation .site-title-nav {
   color: #979797;
 }
 
+/**
+* Admin bar large mobile screen adjustment
+*/
+@media screen and (min-width: 601px) {
+  body.admin-bar.scrolling #top-navigation {
+    top: 46px;
+  }
+}
+/**
+* Admin bar tablet screen adjustment
+*/
+@media screen and (min-width: 783px) {
+  body.admin-bar #top-navigation {
+    top: 32px;
+  }
+  body.admin-bar.scrolling #top-navigation {
+    top: 32px;
+  }
+}
 /**
 * Tablet adjustment
 */
@@ -1562,6 +1586,29 @@ body.scrolling #top-navigation .site-title-nav {
   color: #999;
 }
 
+body.admin-bar .drawer-content {
+  top: 46px;
+}
+body.admin-bar.scrolling .drawer-content {
+  top: 0;
+}
+
+/**
+* Admin bar large mobile screen adjustment
+*/
+@media screen and (min-width: 601px) {
+  body.admin-bar.scrolling .drawer-content {
+    top: 46px;
+  }
+}
+/**
+* Admin bar tablet screen adjustment
+*/
+@media screen and (min-width: 783px) {
+  body.admin-bar.scrolling .drawer-content {
+    top: 32px;
+  }
+}
 /**
 * Tablet adjustment
 */
@@ -1569,6 +1616,10 @@ body.scrolling #top-navigation .site-title-nav {
   .drawer-content {
     right: auto;
     width: 320px;
+  }
+  .drawer-content .drawer-header {
+    font-size: 23px;
+    font-size: 2.3rem;
   }
   .drawer-content .drawer-widgets .widget {
     padding: 25px 25px 20px 50px;
@@ -1655,6 +1706,7 @@ body.scrolling #top-navigation .site-title-nav {
   font-size: 2.2rem;
   color: #607D8B;
   font-weight: 300;
+  line-height: 1.2;
 }
 .page-header .taxonomy-description {
   font-size: 12px;
@@ -1712,6 +1764,24 @@ body.scrolling #top-navigation .site-title-nav {
 }
 .hentry p:last-child {
   margin-bottom: 0;
+}
+.hentry .edit-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.hentry .edit-link a {
+  text-decoration: none;
+}
+.hentry .edit-link a:hover {
+  opacity: .8;
+}
+.hentry .edit-link a:active {
+  opacity: .6;
 }
 
 .entry-date {
@@ -1825,9 +1895,8 @@ body.scrolling #top-navigation .site-title-nav {
 .single .tags-links .label {
   position: absolute;
   top: 17px;
-  left: 0;
+  left: 15px;
   width: 100px;
-  text-align: center;
   text-transform: uppercase;
   font-size: 11px;
   font-size: 1.1rem;
@@ -1976,8 +2045,8 @@ body.scrolling #top-navigation .site-title-nav {
   }
 
   .entry-content {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.8;
   }
 
@@ -2016,13 +2085,13 @@ body.scrolling #top-navigation .site-title-nav {
   .page .tags-links,
   .single .cat-links,
   .single .tags-links {
-    padding: 15px 60px 15px 145px;
+    padding: 15px 60px 15px 160px;
   }
   .page .cat-links .label,
   .page .tags-links .label,
   .single .cat-links .label,
   .single .tags-links .label {
-    left: 45px;
+    left: 60px;
   }
 }
 /**
@@ -2059,26 +2128,40 @@ body.scrolling #top-navigation .site-title-nav {
     line-height: 1.6;
   }
 
+  .single .hentry,
+  .page .hentry {
+    padding-top: 80px;
+  }
+  .single .hentry.has-post-thumbnail,
+  .page .hentry.has-post-thumbnail {
+    padding-top: 25px;
+  }
+  .single .entry-featured-image,
+  .page .entry-featured-image {
+    margin-bottom: 40px;
+  }
   .single .entry-title,
   .page .entry-title {
-    padding: 0 95px;
+    padding: 0 50px 10px;
     display: block;
+    font-size: 44px;
+    font-size: 4.4rem;
   }
   .single .entry-content,
   .page .entry-content {
-    padding: 40px 95px;
+    padding: 0 50px 40px;
   }
   .single .cat-links,
   .single .tags-links,
   .page .cat-links,
   .page .tags-links {
-    padding: 15px 60px 15px 160px;
+    padding: 15px 60px 15px 240px;
   }
   .single .cat-links .label,
   .single .tags-links .label,
   .page .cat-links .label,
   .page .tags-links .label {
-    left: 25px;
+    left: 110px;
   }
 }
 /*--------------------------------------------------------------
@@ -2112,6 +2195,24 @@ body.scrolling #top-navigation .site-title-nav {
 
 .page #comments {
   margin-top: 20px;
+}
+
+.comment-navigation {
+  padding: 15px;
+  border-bottom: 1px solid #DFDFDF;
+  display: block;
+  width: 100%;
+  content: "";
+  display: table;
+}
+.comment-navigation a {
+  text-decoration: none;
+}
+.comment-navigation .nav-previous {
+  float: left;
+}
+.comment-navigation .nav-next {
+  float: right;
 }
 
 .comment-list {
@@ -2183,6 +2284,16 @@ body.scrolling #top-navigation .site-title-nav {
 }
 .comment-list .comment .children .comment {
   border: none;
+}
+.comment-list .pingback,
+.comment-list .trackback {
+  padding: 15px;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.no-comments {
+  padding: 15px;
+  text-align: center;
 }
 
 .comment-content a {
@@ -2259,8 +2370,8 @@ body.scrolling #top-navigation .site-title-nav {
   }
 
   .comment-list .comment .avatar {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     top: 48px;
     left: 25px;
   }
@@ -2283,6 +2394,20 @@ body.scrolling #top-navigation .site-title-nav {
   .comment-list .comment .comment-meta {
     font-size: 12px;
     font-size: 1.2rem;
+  }
+  .comment-list .pingback,
+  .comment-list .trackback {
+    padding: 15px 25px;
+  }
+
+  .comment-navigation {
+    padding: 15px 25px;
+  }
+
+  .no-comments {
+    padding: 15px 25px;
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   #respond {
@@ -2318,12 +2443,15 @@ body.scrolling #top-navigation .site-title-nav {
 * Desktop adjustment
 */
 @media screen and (min-width: 960px) {
+  .comment-list .comment .avatar {
+    top: 33px;
+  }
   .comment-list .comment .comment-body {
-    padding: 25px 25px 25px 160px;
+    padding: 25px 25px 25px 110px;
   }
 
   #respond {
-    padding: 40px 160px;
+    padding: 60px 110px;
   }
 }
 /*--------------------------------------------------------------

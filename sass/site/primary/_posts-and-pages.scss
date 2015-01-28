@@ -9,6 +9,7 @@
 		@include font-size( 2.2 );
 		color: $color__accent;
 		font-weight: 300;
+		line-height: 1.2;
 	}
 
 	.taxonomy-description{
@@ -74,6 +75,27 @@
 
 	p:last-child{
 		margin-bottom: 0;
+	}
+
+	.edit-link{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		@include font-size( 1.1 );
+		font-weight: 300;
+		text-transform: uppercase;
+
+		a{
+			text-decoration: none;
+
+			&:hover{
+				opacity: .8;
+			}
+
+			&:active{
+				opacity: .6;
+			}
+		}
 	}
 }
 
@@ -188,9 +210,8 @@
 		.label{
 			position: absolute;
 			top: 17px;
-			left: 0;
+			left: 15px;
 			width: 100px;
-			text-align: center;
 			text-transform: uppercase;
 			@include font-size( 1.1 );
 			font-weight: bold;
@@ -312,7 +333,7 @@
 	}
 
 	.entry-content{
-		@include font-size( 1.6 );
+		@include font-size( 1.5 );
 		line-height: 1.8;
 	}
 
@@ -347,10 +368,10 @@
 
 		.cat-links,
 		.tags-links{
-			padding: 15px 60px 15px 145px;
+			padding: 15px 60px 15px 160px;
 
 			.label{
-				left: 45px;
+				left: 60px;
 			}
 		}
 	}
@@ -392,21 +413,34 @@
 
 	.single,
 	.page{
+		.hentry{
+			padding-top: 80px;
+
+			&.has-post-thumbnail{
+				padding-top: 25px;
+			}
+		}
+
+		.entry-featured-image{
+			margin-bottom: 40px;
+		}
+
 		.entry-title{
-			padding: 0 95px;
+			padding: 0 50px 10px;
 			display: block;
+			@include font-size( 4.4 );
 		}
 
 		.entry-content{
-			padding: 40px 95px;
+			padding: 0 50px 40px;
 		}
 
 		.cat-links,
 		.tags-links{
-			padding: 15px 60px 15px 160px;
+			padding: 15px 60px 15px 240px;
 
 			.label{
-				left: 25px;
+				left: 110px;
 			}
 		}
 	}

@@ -120,6 +120,9 @@ if ( ! function_exists( 'materialist_entry_footer' ) ) :
  * Prints HTML with meta information for the categories, tags and comments.
  */
 function materialist_entry_footer() {
+
+	edit_post_link( __( 'Edit', 'materialist' ), '<span class="edit-link">', '</span>' );
+	
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
@@ -140,8 +143,6 @@ function materialist_entry_footer() {
 		comments_popup_link( __( 'Leave a comment', 'materialist' ), __( '1 Comment', 'materialist' ), __( '% Comments', 'materialist' ) );
 		echo '</span>';
 	}
-
-	edit_post_link( __( 'Edit', 'materialist' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 

@@ -197,6 +197,51 @@
 	}
 }
 
+// Admin bar
+body{
+	&.admin-bar{
+		.drawer-content{
+			top: 46px;
+		}
+
+		&.scrolling{
+			.drawer-content{
+				top: 0;
+			}
+		}
+	}
+}
+
+/**
+* Admin bar large mobile screen adjustment
+*/
+@media screen and ( min-width: 601px ){
+	body{
+		&.admin-bar{
+			&.scrolling{
+				.drawer-content{
+					top: 46px;
+				}
+			}
+		}
+	}
+}
+
+/**
+* Admin bar tablet screen adjustment
+*/
+@media screen and ( min-width: 783px ){
+	body{
+		&.admin-bar{
+			&.scrolling{
+				.drawer-content{
+					top: 32px;
+				}
+			}
+		}
+	}
+}
+
 /**
 * Tablet adjustment
 */
@@ -204,6 +249,10 @@
 	.drawer-content{
 		right: auto;
 		width: 320px;
+
+		.drawer-header{
+			@include font-size( 2.3 );
+		}
 
 		.drawer-widgets{
 			.widget{

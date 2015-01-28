@@ -56,6 +56,18 @@ body{
 			// display: none;			
 		}
 	}
+
+	&.admin-bar{
+		#top-navigation{
+			top: 46px;
+		}
+
+		&.scrolling{
+			#top-navigation{
+				top: 0;
+			}
+		}
+	}
 }
 
 .post-navigation{
@@ -90,6 +102,40 @@ body{
 		.title{
 			display: block;
 			color: $color__text_date;
+		}
+	}
+}
+
+/**
+* Admin bar large mobile screen adjustment
+*/
+@media screen and ( min-width: 601px ){
+	body{
+		&.admin-bar{
+			&.scrolling{
+				#top-navigation{
+					top: 46px;
+				}
+			}
+		}
+	}
+}
+
+/**
+* Admin bar tablet screen adjustment
+*/
+@media screen and ( min-width: 783px ){
+	body{
+		&.admin-bar{
+			#top-navigation{
+				top: 32px;
+			}				
+
+			&.scrolling{
+				#top-navigation{
+					top: 32px;
+				}
+			}
 		}
 	}
 }
