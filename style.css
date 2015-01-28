@@ -1784,6 +1784,35 @@ body.admin-bar.scrolling .drawer-content {
   border-radius: 3px;
   box-shadow: 0 1px 1px #555;
 }
+.hentry.sticky {
+  padding-right: 45px;
+}
+.hentry.sticky:after {
+  content: '\f308';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Genericons';
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 20px;
+  font-size: 2rem;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  color: #455A64;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
 .hentry p:last-child {
   margin-bottom: 0;
 }
@@ -2080,6 +2109,15 @@ body.admin-bar.scrolling .drawer-content {
   .hentry.has-post-thumbnail .edit-link {
     top: 25px;
   }
+  .hentry.sticky {
+    padding-right: 60px;
+  }
+  .hentry.sticky:after {
+    top: 33px;
+    right: 30px;
+    font-size: 27px;
+    font-size: 2.7rem;
+  }
 
   .entry-date {
     top: 12px;
@@ -2171,7 +2209,7 @@ body.admin-bar.scrolling .drawer-content {
 
   .entry-date {
     width: 120px;
-    top: 9px;
+    top: 12px;
   }
 
   .entry-title {

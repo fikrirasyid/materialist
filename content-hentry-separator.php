@@ -22,8 +22,13 @@
 		$year 		= date( 'Y', $timestamp );
 
 		// Print hentry-month
-		if( $month_index > 0 && $month_index != $month ){
+		if( $month_index > 0 && $month_index != $month || isset( $GLOBALS['wp_query']->has_sticky ) && $GLOBALS['wp_query']->has_sticky ){
 			echo '<h3 class="hentry-separator">'. date( 'F Y', $timestamp ) .'</h3>';
+
+			// Set sticky back to false
+			if( isset( $GLOBALS['wp_query']->has_sticky ) && $GLOBALS['wp_query']->has_sticky ){
+				$GLOBALS['wp_query']->has_sticky = false;
+			}
 		}
 
 		// Print marker

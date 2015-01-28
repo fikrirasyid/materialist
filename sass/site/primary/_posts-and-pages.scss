@@ -85,6 +85,23 @@
 		}
 	}
 
+	&.sticky{
+		padding-right: 45px;
+
+		&:after{
+			content: '\f308';
+			@include genericon;
+			@include font-size( 2 );
+			position: absolute;
+			top: 18px;
+			right: 15px;
+			color: $color__accent_darker;
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);			
+		}
+	}
+
 	p:last-child{
 		margin-bottom: 0;
 	}
@@ -371,6 +388,16 @@
 				top: 25px;
 			}
 		}
+
+		&.sticky{
+			padding-right: 60px;
+
+			&:after{
+				top: 33px;
+				right: 30px;
+				@include font-size( 2.7 );
+			}
+		}
 	}
 
 	.entry-date{
@@ -454,7 +481,7 @@
 
 	.entry-date{
 		width: 120px;
-		top: 9px;
+		top: 12px;
 	}
 
 	.entry-title{
