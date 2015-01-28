@@ -28,10 +28,24 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 
 		// Get target ID
-		var target_id = $(this).attr( 'data-target-id' );
+		var target_id 		= $(this).attr( 'data-target-id' );
+		var sliding_content = $('#'+target_id).find('.sliding-content');
+		var direction		= sliding_content.attr( 'data-direction' );
 
 		// Display target ID
-		$('#'+target_id).fadeToggle();
+		if( $('#'+target_id).is(':visible') ){
+			$('#'+target_id).fadeOut();
+
+			if( 'left' == direction ){
+				sliding_content.animate({ 'left' : '-100%' } );				
+			}
+		} else {
+			$('#'+target_id).fadeIn();
+
+			if( 'left' == direction ){
+				sliding_content.animate({ 'left' : '0' } );				
+			}
+		}
 
 		// Mark body
 		$('body').toggleClass( target_id + '-expanded' );

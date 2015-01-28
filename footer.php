@@ -11,7 +11,7 @@
 	</div><!-- #content -->
 
 	<div id="drawer">
-		<div class="drawer-content">
+		<div class="drawer-content sliding-content" data-direction="left">
 			<div class="drawer-header">
 				<a href="#" data-target-id="drawer" class="genericon genericon-close-alt toggle-button">
 					<span class="label">Close Drawer</span>
