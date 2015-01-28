@@ -1771,6 +1771,19 @@ body.admin-bar.scrolling .drawer-content {
 .hentry.has-post-thumbnail .entry-thumbnail img {
   width: 100%;
 }
+.hentry.has-post-thumbnail .edit-link {
+  top: 15px;
+}
+.hentry.has-post-thumbnail .edit-link a {
+  color: white;
+  background: #607D8B;
+  padding: 5px 15px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #555;
+}
 .hentry p:last-child {
   margin-bottom: 0;
 }
@@ -1780,7 +1793,6 @@ body.admin-bar.scrolling .drawer-content {
   right: 10px;
   font-size: 11px;
   font-size: 1.1rem;
-  font-weight: 300;
   text-transform: uppercase;
 }
 .hentry .edit-link a {
@@ -2058,6 +2070,15 @@ body.admin-bar.scrolling .drawer-content {
 
   .hentry {
     padding: 25px 25px 25px 120px;
+  }
+  .hentry .edit-link {
+    top: 25px;
+    right: 25px;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .hentry.has-post-thumbnail .edit-link {
+    top: 25px;
   }
 
   .entry-date {
