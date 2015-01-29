@@ -96,9 +96,9 @@ function materialist_posted_on() {
 
 	// Determine date format
 	if( is_singular() ){
-		$date_format = 'M jS Y';
+		$date_format = __( 'M jS Y', 'materialist' );
 	} else {
-		$date_format = 'M jS';
+		$date_format = __( 'M jS', 'materialist' );
 	}
 
 	$time_string = sprintf( $time_string,
