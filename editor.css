@@ -853,6 +853,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1.5em;
   margin-bottom: 1em;
 }
+.comment-body ul ul, .comment-body ul ol, .comment-body ol ul, .comment-body ol ol,
+.entry-content ul ul,
+.entry-content ul ol,
+.entry-content ol ul,
+.entry-content ol ol {
+  margin-bottom: 0;
+}
 .comment-body ul > li,
 .entry-content ul > li {
   list-style: disc;
@@ -1046,6 +1053,9 @@ body#tinymce big {
 body#tinymce ul, body#tinymce ol {
   margin-left: 1.5em;
   margin-bottom: 1em;
+}
+body#tinymce ul ul, body#tinymce ul ol, body#tinymce ol ul, body#tinymce ol ol {
+  margin-bottom: 0;
 }
 body#tinymce ul > li {
   list-style: disc;

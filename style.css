@@ -900,6 +900,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1.5em;
   margin-bottom: 1em;
 }
+.comment-body ul ul, .comment-body ul ol, .comment-body ol ul, .comment-body ol ol,
+.entry-content ul ul,
+.entry-content ul ol,
+.entry-content ol ul,
+.entry-content ol ol {
+  margin-bottom: 0;
+}
 .comment-body ul > li,
 .entry-content ul > li {
   list-style: disc;
