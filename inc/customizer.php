@@ -22,11 +22,12 @@ function materialist_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'color_scheme', array(
-		'label'    	=> __( 'Pre-Defined Color Scheme', 'materialist' ),
-		'section'  	=> 'colors',
-		'type'     	=> 'select',
-		'choices'  	=> materialist_color_schemes_choices(),
-		'priority' 	=> 1
+		'label'    		=> __( 'Pre-Defined Color Scheme', 'materialist' ),
+		'description' 	=> __( 'Select pre-defined tested color schemes.', 'materialist' ),
+		'section'  		=> 'colors',
+		'type'     		=> 'select',
+		'choices'  		=> materialist_color_schemes_choices(),
+		'priority' 		=> 1
 	) );	
 
 	// Adding accent color control
@@ -48,7 +49,7 @@ add_action( 'customize_register', 'materialist_customize_register' );
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function materialist_customize_preview_js() {
-	wp_enqueue_script( 'materialist_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20150128.a', true );
+	wp_enqueue_script( 'materialist_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20150129', true );
 
 	// Attaching variables
 	wp_localize_script( 'materialist_customizer', 'materialist_customizer_params', apply_filters( 'materialist_customizer_params', array(
@@ -98,6 +99,14 @@ function materialist_color_schemes_choices(){
 		'#607D8B' 	=> __( 'Blue Grey', 'materialist' ),
 	));
 }
+
+/**
+ * Binds JS listener to make Customizer color_scheme control.
+ */
+function materialist_customize_control_js() {
+	wp_enqueue_script( 'color-scheme-control', get_template_directory_uri() . '/js/color-scheme-control.js', array( 'customize-controls', 'iris', 'underscore', 'wp-util' ), '20141216', true );
+}
+add_action( 'customize_controls_enqueue_scripts', 'materialist_customize_control_js' );
 
 
 /**
