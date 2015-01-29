@@ -10,12 +10,12 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'materialist' ); ?></h1>
+			<section class="error-404 not-found hentry">
+				<header class="entry-header">
+					<h1 class="entry-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'materialist' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div class="entry-content">
 					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'materialist' ); ?></p>
 
 					<?php get_search_form(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 
 					<?php if ( materialist_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php _e( 'Most Used Categories', 'materialist' ); ?></h2>
+						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'materialist' ); ?></h2>
 						<ul>
 						<?php
 							wp_list_categories( array(
@@ -41,7 +41,7 @@ get_header(); ?>
 
 					<?php
 						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'materialist' ), convert_smilies( ':)' ) ) . '</p>';
+						$archive_content = '<p>' . __( 'Try looking in the monthly archives.', 'materialist' ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 

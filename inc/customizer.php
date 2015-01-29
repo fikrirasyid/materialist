@@ -259,6 +259,7 @@ function materialist_generate_color_scheme_css( $color__accent ){
 			color: " . $color->lighten( $color__accent, 10 ) . ";
 		}
 
+		.error404 .entry-title,
 		.page .entry-title,
 		.single .entry-title{
 			color: {$color__accent};	
@@ -273,6 +274,7 @@ function materialist_generate_color_scheme_css( $color__accent ){
 			color: {$color__accent_darker};	
 		}
 
+		.widget .widgettitle,
 		.widget .widget-title{
 			color: {$color__accent_darker};	
 		}

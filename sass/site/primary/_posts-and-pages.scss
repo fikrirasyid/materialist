@@ -201,6 +201,7 @@
 	margin-top: 20px;
 }
 
+.error404,
 .page,
 .single{
 	.hentry{
@@ -253,6 +254,34 @@
 			&:hover{
 				opacity: .7;
 			}
+		}
+	}
+}
+
+.error404{
+	.entry-content{
+		h2{
+			margin-top: 4em;
+		}
+
+		.search-field{
+			display: block;
+			margin-bottom: 1em;
+			width: 80%;
+		}
+
+		.widget{
+			li{
+				a{
+					&:hover{
+						text-decoration: underline;
+
+						&:before{
+							display: none;
+						}
+					}
+				}			
+			}			
 		}
 	}
 }
@@ -425,6 +454,7 @@
 		margin-top: 3em;
 	}
 
+	.error404,
 	.page,
 	.single{
 		.hentry{
@@ -498,7 +528,8 @@
 		@include font-size( 1.5	 );
 		line-height: 1.6;
 	}
-
+	
+	.error404,
 	.single,
 	.page{
 		.hentry{

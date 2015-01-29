@@ -1488,6 +1488,7 @@ body.admin-bar.scrolling #top-navigation {
   list-style: none;
   padding: 7px 0;
 }
+.widget .widgettitle,
 .widget .widget-title {
   font-size: 14px;
   font-size: 1.4rem;
@@ -1903,18 +1904,22 @@ body.admin-bar.scrolling .drawer-content {
   margin-top: 20px;
 }
 
+.error404 .hentry,
 .page .hentry,
 .single .hentry {
   padding: 25px 15px;
 }
+.error404 .hentry.post-thumbnail,
 .page .hentry.post-thumbnail,
 .single .hentry.post-thumbnail {
   padding: 25px 15px;
 }
+.error404 .entry-header,
 .page .entry-header,
 .single .entry-header {
   display: block;
 }
+.error404 .entry-title,
 .page .entry-title,
 .single .entry-title {
   font-size: 24px;
@@ -1925,11 +1930,14 @@ body.admin-bar.scrolling .drawer-content {
   color: #607D8B;
   font-weight: 300;
 }
+.error404 .entry-footer,
 .page .entry-footer,
 .single .entry-footer {
   display: block;
   margin: 20px -15px -25px;
 }
+.error404 .cat-links,
+.error404 .tags-links,
 .page .cat-links,
 .page .tags-links,
 .single .cat-links,
@@ -1939,6 +1947,8 @@ body.admin-bar.scrolling .drawer-content {
   position: relative;
   padding: 15px 15px 15px 100px;
 }
+.error404 .cat-links .label,
+.error404 .tags-links .label,
 .page .cat-links .label,
 .page .tags-links .label,
 .single .cat-links .label,
@@ -1953,17 +1963,36 @@ body.admin-bar.scrolling .drawer-content {
   font-weight: bold;
   color: #979797;
 }
+.error404 .cat-links a,
+.error404 .tags-links a,
 .page .cat-links a,
 .page .tags-links a,
 .single .cat-links a,
 .single .tags-links a {
   text-decoration: none;
 }
+.error404 .cat-links a:hover,
+.error404 .tags-links a:hover,
 .page .cat-links a:hover,
 .page .tags-links a:hover,
 .single .cat-links a:hover,
 .single .tags-links a:hover {
   opacity: .7;
+}
+
+.error404 .entry-content h2 {
+  margin-top: 4em;
+}
+.error404 .entry-content .search-field {
+  display: block;
+  margin-bottom: 1em;
+  width: 80%;
+}
+.error404 .entry-content .widget li a:hover {
+  text-decoration: underline;
+}
+.error404 .entry-content .widget li a:hover:before {
+  display: none;
 }
 
 .byline,
@@ -2148,30 +2177,36 @@ body.admin-bar.scrolling .drawer-content {
     margin-top: 3em;
   }
 
+  .error404 .hentry,
   .page .hentry,
   .single .hentry {
     padding: 25px 60px;
   }
+  .error404 .entry-featured-image,
   .page .entry-featured-image,
   .single .entry-featured-image {
     margin: -25px -60px 25px;
   }
+  .error404 .entry-footer,
   .page .entry-footer,
   .single .entry-footer {
     margin: 50px -60px -25px;
     font-size: 14px;
     font-size: 1.4rem;
   }
+  .error404 .entry-footer .label,
   .page .entry-footer .label,
   .single .entry-footer .label {
     font-size: 13px;
     font-size: 1.3rem;
   }
+  .error404 .entry-date,
   .page .entry-date,
   .single .entry-date {
     font-size: 14px;
     font-size: 1.4rem;
   }
+  .error404 .entry-title,
   .page .entry-title,
   .single .entry-title {
     font-size: 34px;
@@ -2179,12 +2214,16 @@ body.admin-bar.scrolling .drawer-content {
     margin-bottom: 25px;
     padding-top: 20px;
   }
+  .error404 .cat-links,
+  .error404 .tags-links,
   .page .cat-links,
   .page .tags-links,
   .single .cat-links,
   .single .tags-links {
     padding: 15px 60px 15px 160px;
   }
+  .error404 .cat-links .label,
+  .error404 .tags-links .label,
   .page .cat-links .label,
   .page .tags-links .label,
   .single .cat-links .label,
@@ -2226,18 +2265,22 @@ body.admin-bar.scrolling .drawer-content {
     line-height: 1.6;
   }
 
+  .error404 .hentry,
   .single .hentry,
   .page .hentry {
     padding-top: 80px;
   }
+  .error404 .hentry.has-post-thumbnail,
   .single .hentry.has-post-thumbnail,
   .page .hentry.has-post-thumbnail {
     padding-top: 25px;
   }
+  .error404 .entry-featured-image,
   .single .entry-featured-image,
   .page .entry-featured-image {
     margin-bottom: 40px;
   }
+  .error404 .entry-title,
   .single .entry-title,
   .page .entry-title {
     padding: 0 50px 10px;
@@ -2245,16 +2288,21 @@ body.admin-bar.scrolling .drawer-content {
     font-size: 44px;
     font-size: 4.4rem;
   }
+  .error404 .entry-content,
   .single .entry-content,
   .page .entry-content {
     padding: 0 50px 40px;
   }
+  .error404 .cat-links,
+  .error404 .tags-links,
   .single .cat-links,
   .single .tags-links,
   .page .cat-links,
   .page .tags-links {
     padding: 15px 60px 15px 240px;
   }
+  .error404 .cat-links .label,
+  .error404 .tags-links .label,
   .single .cat-links .label,
   .single .tags-links .label,
   .page .cat-links .label,

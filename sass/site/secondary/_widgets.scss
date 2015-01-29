@@ -115,6 +115,7 @@
 		}
 	}
 
+	.widgettitle,	
 	.widget-title{
 		@include font-size( 1.4 );
 		color: $color__accent_darker;
