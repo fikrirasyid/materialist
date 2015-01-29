@@ -114,6 +114,20 @@ function materialist_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'materialist_scripts' );
 
+/**
+ * Display color scheme based on one accent color choosen by user
+ */
+if( ! function_exists( 'materialist_color_scheme' ) ) :
+function materialist_color_scheme(){
+	$color_scheme = get_theme_mod( 'color_scheme', false );
+
+	if( $color_scheme ){
+		wp_add_inline_style( 'materialist-style', $color_scheme );
+	}
+}
+endif;
+add_action( 'wp_enqueue_scripts', 'materialist_color_scheme' );
+
 if( ! function_exists( 'materialist_excerpt_length') ) :
 /**
  * Modifying excerpt's length

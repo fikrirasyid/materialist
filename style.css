@@ -1184,7 +1184,7 @@ a:hover, a:focus, a:active {
 
 body.scrolling #top-navigation {
   background: #455A64;
-  box-shadow: 0 1px 2px #607D8B;
+  box-shadow: 0 1px 4px #555;
 }
 body.scrolling #top-navigation .site-title-nav {
   display: inline-block;
