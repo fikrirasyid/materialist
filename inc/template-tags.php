@@ -296,7 +296,7 @@ function materialist_entry_thumbnail( $post_id = false ){
 
 	if( has_post_thumbnail() ){
 
-		echo '<a href="'. get_permalink( $post_id ) .'" title="'. get_the_title( $post_id ) .'" class="entry-thumbnail">';
+		echo '<a href="'. esc_url( get_permalink( $post_id ) ) .'" title="'. get_the_title( $post_id ) .'" class="entry-thumbnail">';
 		echo get_the_post_thumbnail( $post_id, 'medium' );
 		echo '</a>';
 
