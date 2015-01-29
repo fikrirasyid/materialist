@@ -1196,6 +1196,7 @@ a:hover, a:focus, a:active {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1;
+  margin-right: 15px;
   margin-left: 15px;
 }
 #top-navigation .site-title-nav a {

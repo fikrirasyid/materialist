@@ -1,17 +1,161 @@
-/*
-Theme Name: Materialist
-
-Adding support for language written in a Right To Left (RTL) direction is easy -
-it's just a matter of overwriting all the horizontal positioning attributes
-of your CSS stylesheet in a separate stylesheet file named rtl.css.
-
-http://codex.wordpress.org/Right_to_Left_Language_Support
-
-*/
-
-/*
-body {
-	direction: rtl;
-	unicode-bidi: embed;
+body.rtl {
+  direction: rtl;
+  unicode-bidi: embed;
 }
+body.rtl .drawer-content {
+  right: -100%;
+  left: 40px;
+}
+body.rtl .hentry {
+  padding: 15px 75px 15px 15px;
+}
+body.rtl .hentry .edit-link {
+  left: 10px;
+  right: auto;
+}
+body.rtl .hentry.has-post-thumbnail .edit-link {
+  top: 7px;
+}
+body.rtl .hentry.not-found {
+  padding-right: 15px;
+}
+body.rtl .hentry.not-found .entry-header {
+  float: none;
+}
+body.rtl .entry-date {
+  right: 5px;
+  left: auto;
+}
+body.rtl .entry-header {
+  float: right;
+}
+body.rtl.error404 .hentry, body.rtl.page .hentry, body.rtl.single .hentry {
+  padding-right: 15px;
+}
+body.rtl.error404 .entry-date, body.rtl.page .entry-date, body.rtl.single .entry-date {
+  right: auto;
+}
+body.rtl.error404 .entry-header, body.rtl.page .entry-header, body.rtl.single .entry-header {
+  float: none;
+}
+body.rtl.error404 .entry-footer, body.rtl.page .entry-footer, body.rtl.single .entry-footer {
+  margin-bottom: -15px;
+}
+body.rtl.error404 .cat-links,
+body.rtl.error404 .tags-links, body.rtl.page .cat-links,
+body.rtl.page .tags-links, body.rtl.single .cat-links,
+body.rtl.single .tags-links {
+  padding: 15px 100px 15px 15px;
+}
+body.rtl.error404 .cat-links .label,
+body.rtl.error404 .tags-links .label, body.rtl.page .cat-links .label,
+body.rtl.page .tags-links .label, body.rtl.single .cat-links .label,
+body.rtl.single .tags-links .label {
+  left: auto;
+  right: 0;
+  text-align: left;
+  width: 90px;
+}
+body.rtl .post-navigation .nav.nav-next:last-child {
+  text-align: left;
+  float: left;
+}
+body.rtl .post-navigation .nav.nav-previous:first-child {
+  text-align: right;
+}
+body.rtl .post-navigation:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+body.rtl .comment-body ul, body.rtl .comment-body ol,
+body.rtl .entry-content ul,
+body.rtl .entry-content ol {
+  margin-left: 0;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+}
+body.rtl .comment-list .comment .avatar {
+  right: 15px;
+  left: auto;
+}
+body.rtl .comment-list .comment .comment-body {
+  padding: 15px 60px 15px 15px;
+}
+body.rtl .comment-list .comment .comment-reply-link {
+  left: 15px;
+  right: auto;
+}
+body.rtl .comment-list .comment .children {
+  margin-left: 0;
+  margin-right: 50px;
+}
+body.rtl .comment-navigation .nav-previous {
+  float: right;
+  text-align: right;
+}
+body.rtl #cancel-comment-reply-link {
+  right: auto;
+  left: 15px;
+}
+
+/**
+* Tablet adjustment
 */
+@media screen and (min-width: 760px) {
+  body.rtl .hentry {
+    padding: 25px 120px 25px 25px;
+  }
+  body.rtl .hentry .edit-link {
+    left: 25px;
+  }
+  body.rtl .hentry.has-post-thumbnail .edit-link {
+    top: 30px;
+  }
+  body.rtl .hentry.not-found {
+    padding-right: 25px;
+  }
+  body.rtl .entry-title {
+    line-height: 1.1;
+  }
+  body.rtl .entry-date {
+    right: 10px;
+  }
+  body.rtl.error404 .hentry, body.rtl.page .hentry, body.rtl.single .hentry {
+    padding: 25px 60px;
+  }
+  body.rtl .post-navigation .nav.nav-previous {
+    padding-right: 20px;
+  }
+  body.rtl .post-navigation .nav.nav-next {
+    padding-right: 0;
+  }
+  body.rtl .comment-list .comment .avatar {
+    right: 25px;
+  }
+  body.rtl .comment-list .comment .comment-body {
+    padding: 40px 120px 40px 40px;
+  }
+  body.rtl .comment-list .comment .comment-reply-link {
+    left: 40px;
+  }
+  body.rtl #cancel-comment-reply-link {
+    left: 60px;
+  }
+}
+/**
+* Desktop adjustment
+*/
+@media screen and (min-width: 960px) {
+  body.rtl .hentry {
+    padding-right: 160px;
+  }
+  body.rtl.error404 .hentry, body.rtl.page .hentry, body.rtl.single .hentry {
+    padding-top: 80px;
+  }
+  body.rtl.error404 .hentry.has-post-thumbnail, body.rtl.page .hentry.has-post-thumbnail, body.rtl.single .hentry.has-post-thumbnail {
+    padding-top: 25px;
+  }
+}

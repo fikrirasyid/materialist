@@ -37,13 +37,21 @@ jQuery(document).ready(function($) {
 			$('#'+target_id).fadeOut();
 
 			if( 'left' == direction ){
-				sliding_content.animate({ 'left' : '-100%' } );				
+				if( $('body').is( '.rtl' ) ){
+					sliding_content.animate({ 'right' : '-100%' } );
+				} else {
+					sliding_content.animate({ 'left' : '-100%' } );
+				}
 			}
 		} else {
 			$('#'+target_id).fadeIn();
 
 			if( 'left' == direction ){
-				sliding_content.animate({ 'left' : '0' } );				
+				if( $('body').is( '.rtl' ) ){
+					sliding_content.animate({ 'right' : '0' } );
+				} else {
+					sliding_content.animate({ 'left' : '0' } );
+				}
 			}
 		}
 
