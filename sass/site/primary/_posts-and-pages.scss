@@ -102,6 +102,24 @@
 		}
 	}
 
+	&.not-found{
+		padding: 15px 18px 18px;
+
+		.entry-title{
+			@include font-size( 2 );
+		}
+
+		.entry-content{
+			margin-top: .5em;
+		}
+
+		.search-field{
+			width: 80%;
+			display: block;
+			margin-bottom: 1em;
+		}
+	}
+
 	p:last-child{
 		margin-bottom: 0;
 	}
@@ -427,6 +445,10 @@
 				@include font-size( 2.7 );
 			}
 		}
+
+		&.not-found{
+			padding:20px 25px 27px;
+		}		
 	}
 
 	.entry-date{
@@ -453,7 +475,7 @@
 	.page-links{
 		margin-top: 3em;
 	}
-
+	
 	.error404,
 	.page,
 	.single{
@@ -507,6 +529,11 @@
 
 	.hentry{
 		padding-left: 160px;	
+
+
+		&.not-found{
+			padding:40px 60px 45px;
+		}		
 	}
 
 	.entry-date{
@@ -528,7 +555,7 @@
 		@include font-size( 1.5	 );
 		line-height: 1.6;
 	}
-	
+
 	.error404,
 	.single,
 	.page{

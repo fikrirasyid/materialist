@@ -1814,6 +1814,21 @@ body.admin-bar.scrolling .drawer-content {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
+.hentry.not-found {
+  padding: 15px 18px 18px;
+}
+.hentry.not-found .entry-title {
+  font-size: 20px;
+  font-size: 2rem;
+}
+.hentry.not-found .entry-content {
+  margin-top: .5em;
+}
+.hentry.not-found .search-field {
+  width: 80%;
+  display: block;
+  margin-bottom: 1em;
+}
 .hentry p:last-child {
   margin-bottom: 0;
 }
@@ -2147,6 +2162,9 @@ body.admin-bar.scrolling .drawer-content {
     font-size: 27px;
     font-size: 2.7rem;
   }
+  .hentry.not-found {
+    padding: 20px 25px 27px;
+  }
 
   .entry-date {
     top: 12px;
@@ -2244,6 +2262,9 @@ body.admin-bar.scrolling .drawer-content {
 
   .hentry {
     padding-left: 160px;
+  }
+  .hentry.not-found {
+    padding: 40px 60px 45px;
   }
 
   .entry-date {
