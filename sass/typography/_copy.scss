@@ -187,6 +187,23 @@
 			}
 		}
 	}	
+
+	.post-password-form{
+		margin-top: 1em;
+		
+		label{
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			font-weight: 700;
+		}		
+
+		input[type="password"] {
+			margin-bottom: 1em;
+			margin-right: 1em;
+			display: block;
+			width: 80%;
+		}	
+	}
 }
 
 .comment-body,

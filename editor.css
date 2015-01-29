@@ -887,6 +887,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .9em;
   line-height: 1.4;
 }
+.comment-body .post-password-form,
+.entry-content .post-password-form {
+  margin-top: 1em;
+}
+.comment-body .post-password-form label,
+.entry-content .post-password-form label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.comment-body .post-password-form input[type="password"],
+.entry-content .post-password-form input[type="password"] {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  display: block;
+  width: 80%;
+}
 
 body#tinymce {
   padding: 30px 30px 0 !important;
@@ -1077,6 +1094,20 @@ body#tinymce table tr td, body#tinymce table th td {
   padding: .7em .7em .65em;
   font-size: .9em;
   line-height: 1.4;
+}
+body#tinymce .post-password-form {
+  margin-top: 1em;
+}
+body#tinymce .post-password-form label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+body#tinymce .post-password-form input[type="password"] {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  display: block;
+  width: 80%;
 }
 body#tinymce blockquote p {
   font-size: 21px;
