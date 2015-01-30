@@ -331,7 +331,7 @@ function materialist_comment( $comment, $args, $depth ) {
 			</div>
 
 			<?php if ( '0' == $comment->comment_approved ) : ?>
-			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
+			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'materialist' ) ?></em>
 			<br />
 			<?php endif; ?>
 
