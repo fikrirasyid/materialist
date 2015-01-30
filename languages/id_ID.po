@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: materialist\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-01-30 08:11+0700\n"
-"PO-Revision-Date: 2015-01-30 08:11+0700\n"
+"POT-Creation-Date: 2015-01-30 07:49+0700\n"
+"PO-Revision-Date: 2015-01-30 08:06+0700\n"
 "Last-Translator: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language-Team: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language: en\n"
@@ -25,421 +25,464 @@ msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Oops! Halaman tersebut tidak dapat ditemukan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Tidak ada yang dapat ditemukan di halaman ini. Coba tautan dibawah atau "
+"lakukan pencarian?"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/404.php:27
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Kategori Paling Banyak Digunakan"
 
 #. translators: %1$s: smiley
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/404.php:44
 msgid "Try looking in the monthly archives."
-msgstr ""
+msgstr "Coba lihat di arsip bulanan."
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:24
 #, php-format
 msgctxt "comments title"
 msgid "One response on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s responses on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Satu respon untuk &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s respon untuk &ldquo;%2$s&rdquo;"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:38
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:56
 msgid "Comment navigation"
-msgstr ""
+msgstr "Navigasi Komentar"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:39
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:57
 msgid "&laquo; Older"
-msgstr ""
+msgstr "&laquo; Terdahulu"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:40
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:58
 msgid "Newer &raquo;"
-msgstr ""
+msgstr "Terbaru &raquo;"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/comments.php:68
 msgid "Comments are closed."
-msgstr ""
+msgstr "Komentar Ditutup"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-hentry-separator.php:20
 msgid "Y-m-d"
-msgstr ""
+msgstr "Y-m-d"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-hentry-separator.php:21
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-hentry-separator.php:22
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-hentry-separator.php:26
 msgid "F Y"
-msgstr ""
+msgstr "F Y"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-hentry-separator.php:35
 msgid "F"
-msgstr ""
+msgstr "F"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-none.php:13
 msgid "Nothing Found"
-msgstr ""
+msgstr "Tidak Ditemukan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-none.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Siap untuk mempublikasikan tulisan pertamamu? <a href=\"%1$s\">Mulai dari "
+"sini</a>."
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-none.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Maaf, tidak ada yang cocok dengan kata kunci pencarianmu. Coba lagi dengan "
+"kata kunci berbeda"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
+msgstr "Kami tidak menemukan apa yang kamu cari. Coba lakukan pencarian."
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-page.php:18
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-single.php:28
 msgid "Pages:"
-msgstr ""
+msgstr "Halaman:"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/content-page.php:26
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:124
 msgid "Edit"
-msgstr ""
+msgstr "Edit"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/footer.php:39
 #, php-format
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Ditenagai oleh %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/footer.php:41
 #, php-format
 msgid "Theme: %1$s"
-msgstr ""
+msgstr "Tema: %1$s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/functions.php:53
 msgid "Primary Menu"
-msgstr ""
+msgstr "Menu Utama"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/functions.php:88
 msgid "Sidebar"
-msgstr ""
+msgstr "Sidebar"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/header.php:22
 msgid "Skip to content"
-msgstr ""
+msgstr "Langsung ke konten"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/header.php:25
 msgid "Navigation"
-msgstr ""
+msgstr "Navigasi"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:25
 msgid "Pre-Defined Color Scheme"
-msgstr ""
+msgstr "Skema Warna Bawaan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:26
 msgid "Select pre-defined tested color schemes."
-msgstr ""
+msgstr "Pilih skema warna bawaan yang telah."
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:41
 msgid "Accent color"
-msgstr ""
+msgstr "Warna Aksen"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:42
 msgid ""
 "Select one light color of your choice. Materialist will adjust its color "
 "scheme based on this color of choice.."
 msgstr ""
+"Pilih satu warna cerah pilihanmu. Materialist akan menyesuaikan skema warna "
+"berdasarkan warna cerah pilihanmu.."
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:57
 msgid "Error generating color scheme. Please try again."
-msgstr ""
+msgstr "Terjadi galat dalam membuat skema warna. Silahkan coba lagi."
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:81
 msgid "Red"
-msgstr ""
+msgstr "Merah"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:82
 msgid "Pink"
-msgstr ""
+msgstr "Merah Muda"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:83
 msgid "Purple"
-msgstr ""
+msgstr "Ungu"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:84
 msgid "Deep Purple"
-msgstr ""
+msgstr "Ungu Gelap"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:85
 msgid "Indigo"
-msgstr ""
+msgstr "Nila"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:86
 msgid "Blue"
-msgstr ""
+msgstr "Biru"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:87
 msgid "Light Blue"
-msgstr ""
+msgstr "Biru Muda"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:88
 msgid "Cyan"
-msgstr ""
+msgstr "Cyan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:89
 msgid "Teal"
-msgstr ""
+msgstr "Teal"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:90
 msgid "Green"
-msgstr ""
+msgstr "Hijau"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:91
 msgid "Light Green"
-msgstr ""
+msgstr "Hijau Muda"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:92
 msgid "Lime"
-msgstr ""
+msgstr "Kuning Limau"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:93
 msgid "Yellow"
-msgstr ""
+msgstr "Kuning"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:94
 msgid "Amber"
-msgstr ""
+msgstr "Kuning Sawo"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:95
 msgid "Orange"
-msgstr ""
+msgstr "Oranye"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:96
 msgid "Deep Orange"
-msgstr ""
+msgstr "Oranye Tua"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:97
 msgid "Brown"
-msgstr ""
+msgstr "Coklat"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:98
 msgid "Grey"
-msgstr ""
+msgstr "Abu-Abu"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:99
 msgid "Blue Grey"
-msgstr ""
+msgstr "Biru Abu"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/extras.php:52
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "Halaman %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:24
 msgid "Post navigation"
-msgstr ""
+msgstr "Navigasi Tulisan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:27
 msgid ""
 "<span class=\"label\">Previously</span><span class=\"title\">%title</span>"
 msgstr ""
+"<span class=\"label\">Sebelumnya</span><span class=\"title\">%title</span>"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:28
 msgid ""
 "<span class=\"label\">Read Next</span><span class=\"title\">%title</span>"
 msgstr ""
+"<span class=\"label\">Selanjutnya</span><span class=\"title\">%title</span>"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:49
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:74
 msgid "Posts navigation"
-msgstr ""
+msgstr "Navigasi pos"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:51
 msgid "Newer Posts"
-msgstr ""
+msgstr "Tulisan Terbaru"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:76
 msgid "More Posts"
-msgstr ""
+msgstr "Tulisan Selanjutnya"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:99
 msgid "M jS Y"
-msgstr ""
+msgstr "M jS Y"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:101
 msgid "M jS"
-msgstr ""
+msgstr "M jS"
 
 #. translators: used between list items, there is a space after the comma
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:129
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:135
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:131
 #, php-format
 msgid "<span class=\"label\">Posted in</span> %1$s"
-msgstr ""
+msgstr "<span class=\"label\">Kategori</span> %1$s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:137
 #, php-format
 msgid "<span class=\"label\">Tagged by</span> %1$s"
-msgstr ""
+msgstr "<span class=\"label\">Tag</span> %1$s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:143
 msgid "Leave a comment"
-msgstr ""
+msgstr "Berikan Komentar"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:143
 msgid "1 Comment"
-msgstr ""
+msgstr "1 Komentar"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:143
 msgid "% Comments"
-msgstr ""
+msgstr "% Komentar"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:162
 #, php-format
 msgid "Category: %s"
-msgstr ""
+msgstr "Kategori: %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:164
 #, php-format
 msgid "Tag: %s"
-msgstr ""
+msgstr "Tag: %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:166
 #, php-format
 msgid "Author: %s"
-msgstr ""
+msgstr "Penulis: %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:168
 #, php-format
 msgid "Year: %s"
-msgstr ""
+msgstr "Tahun: %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:168
 msgctxt "yearly archives date format"
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:170
 #, php-format
 msgid "Month: %s"
-msgstr ""
+msgstr "Bulan: %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:170
 msgctxt "monthly archives date format"
 msgid "F Y"
-msgstr ""
+msgstr "F Y"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:172
 #, php-format
 msgid "Day: %s"
-msgstr ""
+msgstr "Hari: %s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:172
 msgctxt "daily archives date format"
 msgid "F j, Y"
-msgstr ""
+msgstr "F j, Y"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:175
 msgctxt "post format archive title"
 msgid "Asides"
-msgstr ""
+msgstr "Catatan Pendek"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:177
 msgctxt "post format archive title"
 msgid "Galleries"
-msgstr ""
+msgstr "Galeri"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:179
 msgctxt "post format archive title"
 msgid "Images"
-msgstr ""
+msgstr "Gambar"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:181
 msgctxt "post format archive title"
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:183
 msgctxt "post format archive title"
 msgid "Quotes"
-msgstr ""
+msgstr "Kutipan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:185
 msgctxt "post format archive title"
 msgid "Links"
-msgstr ""
+msgstr "Tautan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:187
 msgctxt "post format archive title"
 msgid "Statuses"
-msgstr ""
+msgstr "Status"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:189
 msgctxt "post format archive title"
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:191
 msgctxt "post format archive title"
 msgid "Chats"
-msgstr ""
+msgstr "Obrolan"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:194
 #, php-format
 msgid "Archives: %s"
-msgstr ""
+msgstr "Arsip: %s"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:198
 #, php-format
 msgid "%1$s: %2$s"
-msgstr ""
+msgstr "%1$s: %2$s"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:200
 msgid "Archives"
-msgstr ""
+msgstr "Arsip"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:319
 msgid "Pingback:"
-msgstr ""
+msgstr "Pingback"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:319
 msgid "(Edit)"
-msgstr ""
+msgstr "(Edit)"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:330
 #, php-format
 msgid "<cite class=\"fn\">%s</cite>"
-msgstr ""
+msgstr "<cite class=\"fn\">%s</cite>"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:334
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Komentarmu sedang menunggu moderasi"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/template-tags.php:343
 msgid "| Edit"
-msgstr ""
+msgstr "| Edit"
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Hasil Pencarian untuk: %s"
+
+#~ msgid "F j, Y"
+#~ msgstr "F j, Y"
+
+#~ msgid "Asides"
+#~ msgstr "Catatan Pendek"
+
+#~ msgid "Galleries"
+#~ msgstr "Galeri"
+
+#~ msgid "Images"
+#~ msgstr "Gambar"
+
+#~ msgid "Videos"
+#~ msgstr "Video"
+
+#~ msgid "Quotes"
+#~ msgstr "Kutipan"
+
+#~ msgid "Links"
+#~ msgstr "Tautan"
+
+#~ msgid "Statuses"
+#~ msgstr "Status"
+
+#~ msgid "Audio"
+#~ msgstr "Suara"
+
+#~ msgid "Chats"
+#~ msgstr "Obrolan"
+
+#~ msgid "Try looking in the monthly archives. %1$s"
+#~ msgstr "Coba lihat di arsip bulanan. %1$s"

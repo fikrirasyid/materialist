@@ -21,11 +21,11 @@ function materialist_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'cinnamon' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'materialist' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav nav-previous">%link</div>', __( '<span class="label">Previously</span><span class="title">%title</span>', 'cinnamon' ) );
-				next_post_link(     '<div class="nav nav-next">%link</div>',     __( '<span class="label">Read Next</span><span class="title">%title</span>', 'cinnamon' ) );
+				previous_post_link( '<div class="nav nav-previous">%link</div>', __( '<span class="label">Previously</span><span class="title">%title</span>', 'materialist' ) );
+				next_post_link(     '<div class="nav nav-next">%link</div>',     __( '<span class="label">Read Next</span><span class="title">%title</span>', 'materialist' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
