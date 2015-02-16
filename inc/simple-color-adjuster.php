@@ -19,7 +19,7 @@
  * License: Distributed under the terms of GNU General Public License
  * Copyright: Fikri Rasyid, http://fikrirasy.id
  */
-class Simple_Color_Adjuster{
+class Materialist_Simple_Color_Adjuster{
 
 	/**
 	 * Method for lightening

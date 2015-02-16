@@ -160,7 +160,7 @@ add_filter( 'excerpt_more', 'materialist_excerpt_more' );
 /**
  * Load simple color adjuster library
  */
-if( ! class_exists( 'Simple_Color_Adjuster' ) ){
+if( ! class_exists( 'Materialist_Simple_Color_Adjuster' ) ){
 	require get_template_directory() . '/inc/simple-color-adjuster.php';
 }
 

@@ -140,7 +140,7 @@ endif;
 /**
  * Generate color scheme based on color accent given
  * 
- * @uses Simple_Color_Adjuster
+ * @uses Materialist_Simple_Color_Adjuster
  */
 if( ! function_exists( 'materialist_generate_color_scheme_css' ) ) :
 function materialist_generate_color_scheme_css( $color__accent ){
@@ -150,7 +150,7 @@ function materialist_generate_color_scheme_css( $color__accent ){
 		return false;
 	}
 
-	$color = new Simple_Color_Adjuster;
+	$color = new Materialist_Simple_Color_Adjuster;
 	$color__accent_darker = $color->darken( $color__accent, 13 );
 	$css = "
 		/* _links.scss */
