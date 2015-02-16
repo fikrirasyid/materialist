@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: materialist\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-01-30 08:11+0700\n"
-"PO-Revision-Date: 2015-01-30 08:11+0700\n"
+"POT-Creation-Date: 2015-02-16 18:09+0700\n"
+"PO-Revision-Date: 2015-02-16 18:10+0700\n"
 "Last-Translator: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language-Team: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language: en\n"
@@ -169,79 +169,84 @@ msgstr ""
 msgid "Error generating color scheme. Please try again."
 msgstr ""
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:81
-msgid "Red"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:82
-msgid "Pink"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:83
-msgid "Purple"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:84
-msgid "Deep Purple"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:85
-msgid "Indigo"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:86
-msgid "Blue"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:87
-msgid "Light Blue"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:88
-msgid "Cyan"
-msgstr ""
-
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:89
-msgid "Teal"
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:64
+msgid ""
+"Color scheme cannot be generated. Please activate Materialist theme first."
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:90
-msgid "Green"
+msgid "Red"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:91
-msgid "Light Green"
+msgid "Pink"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:92
-msgid "Lime"
+msgid "Purple"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:93
-msgid "Yellow"
+msgid "Deep Purple"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:94
-msgid "Amber"
+msgid "Indigo"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:95
-msgid "Orange"
+msgid "Blue"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:96
-msgid "Deep Orange"
+msgid "Light Blue"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:97
-msgid "Brown"
+msgid "Cyan"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:98
-msgid "Grey"
+msgid "Teal"
 msgstr ""
 
 #: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:99
+msgid "Green"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:100
+msgid "Light Green"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:101
+msgid "Lime"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:102
+msgid "Yellow"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:103
+msgid "Amber"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:104
+msgid "Orange"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:105
+msgid "Deep Orange"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:106
+msgid "Brown"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:107
+msgid "Grey"
+msgstr ""
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:108
 msgid "Blue Grey"
 msgstr ""
 

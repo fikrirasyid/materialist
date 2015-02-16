@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: materialist\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-01-30 07:49+0700\n"
-"PO-Revision-Date: 2015-01-30 08:06+0700\n"
+"POT-Creation-Date: 2015-02-16 18:10+0700\n"
+"PO-Revision-Date: 2015-02-16 18:11+0700\n"
 "Last-Translator: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language-Team: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language: en\n"
@@ -177,79 +177,86 @@ msgstr ""
 msgid "Error generating color scheme. Please try again."
 msgstr "Terjadi galat dalam membuat skema warna. Silahkan coba lagi."
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:81
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:64
+msgid ""
+"Color scheme cannot be generated. Please activate Materialist theme first."
+msgstr ""
+"Skema warna tidak bisa dibuat. Tolong aktifkan tema Materialist terlebih "
+"dahulu."
+
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:90
 msgid "Red"
 msgstr "Merah"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:82
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:91
 msgid "Pink"
 msgstr "Merah Muda"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:83
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:92
 msgid "Purple"
 msgstr "Ungu"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:84
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:93
 msgid "Deep Purple"
 msgstr "Ungu Gelap"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:85
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:94
 msgid "Indigo"
 msgstr "Nila"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:86
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:95
 msgid "Blue"
 msgstr "Biru"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:87
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:96
 msgid "Light Blue"
 msgstr "Biru Muda"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:88
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:97
 msgid "Cyan"
 msgstr "Cyan"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:89
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:98
 msgid "Teal"
 msgstr "Teal"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:90
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:99
 msgid "Green"
 msgstr "Hijau"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:91
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:100
 msgid "Light Green"
 msgstr "Hijau Muda"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:92
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:101
 msgid "Lime"
 msgstr "Kuning Limau"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:93
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:102
 msgid "Yellow"
 msgstr "Kuning"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:94
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:103
 msgid "Amber"
 msgstr "Kuning Sawo"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:95
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:104
 msgid "Orange"
 msgstr "Oranye"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:96
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:105
 msgid "Deep Orange"
 msgstr "Oranye Tua"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:97
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:106
 msgid "Brown"
 msgstr "Coklat"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:98
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:107
 msgid "Grey"
 msgstr "Abu-Abu"
 
-#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:99
+#: /Users/fmba/htdocs/fikrirasyid/wp-content/themes/materialist/inc/customizer.php:108
 msgid "Blue Grey"
 msgstr "Biru Abu"
 
