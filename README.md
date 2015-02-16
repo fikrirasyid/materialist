@@ -52,5 +52,14 @@ Here’s how Materialist looks like:
 #### January 30th, 2015
 Currently in theme review process for WordPress theme repository.
 
+#### February 16th, 2015
+Version 1.0.1
+
+- Fixing missing text domain
+- Adding theme prefix for `Simple_Color_Adjuster`
+- Updating readme.md
+- Adding proper error message for failure color scheme generating process in live preview (not-activated) mode
+- Updating translation
+
 ## Download
 [Download on Github](https://github.com/fikrirasyid/materialist) | [Demo](http://materialist.fikrirasy.id/)
