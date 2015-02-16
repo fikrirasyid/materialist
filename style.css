@@ -55,9 +55,11 @@ Copyright: Fikri Rasyid, http://fikrirasy.id
 8.0 Clearings
 9.0 Widgets
 10.0 Content
-	10.1 Posts and pages
-	10.2 Asides
-	10.3 Comments
+	10.1 Header
+	10.2 Posts and pages
+	10.3 Asides
+	10.4 Comments
+	10.4 Footer
 11.0 Infinite scroll
 12.0 Media
 	12.1 Captions
@@ -1683,7 +1685,7 @@ body.admin-bar.scrolling .drawer-content {
 10.0 Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-10.x Header
+10.1 Header
 --------------------------------------------------------------*/
 #masthead {
   background: #607D8B;
@@ -1743,7 +1745,7 @@ body.admin-bar.scrolling .drawer-content {
   }
 }
 /*--------------------------------------------------------------
-10.1 Posts and pages
+10.2 Posts and pages
 --------------------------------------------------------------*/
 #main {
   margin: 20px;
@@ -2373,7 +2375,7 @@ body.admin-bar.scrolling .drawer-content {
   }
 }
 /*--------------------------------------------------------------
-10.2 Asides
+10.3 Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -2381,7 +2383,7 @@ body.admin-bar.scrolling .drawer-content {
 }
 
 /*--------------------------------------------------------------
-10.3 Comments
+10.4 Comments
 --------------------------------------------------------------*/
 .comments-title {
   color: #607D8B;
@@ -2663,7 +2665,7 @@ body.admin-bar.scrolling .drawer-content {
   }
 }
 /*--------------------------------------------------------------
-10.x Footer
+10.5 Footer
 --------------------------------------------------------------*/
 #colophon {
   border-top: 1px solid #DFDFDF;
