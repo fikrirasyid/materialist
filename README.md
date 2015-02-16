@@ -1,44 +1,56 @@
-![Travis CI Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)
+# Materialist
+### WordPress Theme + Material Design
 
-_s
-===
+![Materialist](http://fikrirasy.id/wp-content/uploads/2015/02/materialist-featured.jpg)
+> Materialist is WordPress theme which is (obviously) inspired by Material Design
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+## The Origin
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+The development of Materialist was started in January 2015. Materialist is made to display chronological list of posts efficiently using Material Design.
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in `functions.php` and adding the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/extras.php` that can improve your theming experience.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+Personally, I envision Materialist as ideal theme for a blog which contains list of things / ideas such as [idea.fikrirasy.id](http://idea.fikrirasy.id) (disclaimer: the blog is mine).
 
-Getting Started
----------------
+## The Goals
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+Materialist is made with these goals in mind:
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
+1. Looks great in all screen
+2. Implement Material Design effectively
+3. Ideal for blog which its “list of posts” need to be scanned quickly
+4. In months to come (after several iteration), I personally wish that Materialist reaches a level where Automattic theme would love to use it on WordPress.com
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in style.css.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
 
-OR
+## Features
 
-* Search for: `'_s'` and replace with: `'megatherium'`
-* Search for: `_s_` and replace with: `megatherium_`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `megatherium-`
+Besides its clean looking inspired by Material Design, Materialist comes with these features:
 
-Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+1. Responsive design using mobile first approach. Materialist looks great in all device
+2. Select one “color accent” through Customizer then Materialist will generate color scheme for your site
+3. Looks great right from the start. No quirky setup needed.
+4. Widget support on drawer.
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+## Plugin Compatibilities
 
-Good luck!
+Materialist works nicely with these plugins:
+
+1. [Jetpack](http://jetpack.me/)’s Infinite Scroll
+2. [Civil Footnotes](https://wordpress.org/plugins/civil-footnotes/)
+
+
+## See it Yourself
+
+Here’s how Materialist looks like:
+
+![Materialist looks great on mobile device](http://fikrirasy.id/wp-content/uploads/2015/02/01-Materialist-mobile-homepage-1024x640.jpg)
+![Materialist homepage. Simple and effective for displaying list of posts](http://fikrirasy.id/wp-content/uploads/2015/02/01-Materialist-homepage-1024x680.jpg)
+![The rest of the stuff is located inside the drawer. It keeps things clean.](http://fikrirasy.id/wp-content/uploads/2015/02/02-Materialist-drawer-opened.jpg)
+![Materialist’ single page template](http://fikrirasy.id/wp-content/uploads/2015/02/03-Materialist-single-page-1024x680.jpg)
+![Customizer ready – select a color and Materialist will generate its color scheme for you](http://fikrirasy.id/wp-content/uploads/2015/02/04-Materialist-customizer-1024x680.jpg)
+
+## Changelog
+
+#### January 30th, 2015
+Currently in theme review process for WordPress theme repository.
+
+## Download
+[Download on Github](https://github.com/fikrirasyid/materialist) | [Demo](http://materialist.fikrirasy.id/)
