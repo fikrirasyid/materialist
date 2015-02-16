@@ -61,6 +61,8 @@ Version 1.0.1
 - Adding proper error message for failure color scheme generating process in live preview (not-activated) mode
 - Updating translation
 - Removing unused stuffs
+- Improved UX for civil footnotes plugin
+- Escaping get_the_title used for featured image's attributes
 
 ## Download
 [Download on Github](https://github.com/fikrirasyid/materialist) | [Demo](http://materialist.fikrirasy.id/)
