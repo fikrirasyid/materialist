@@ -896,6 +896,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   vertical-align: baseline;
 }
+.comment-body sup a,
+.comment-body sub a,
+.entry-content sup a,
+.entry-content sub a {
+  text-decoration: none;
+}
 .comment-body sup,
 .entry-content sup {
   bottom: 1ex;
@@ -2826,4 +2832,7 @@ object {
 }
 .entry-content ol.footnotes li p:last-child {
   margin-bottom: 0;
+}
+.entry-content ol.footnotes .backlink {
+  text-decoration: none;
 }

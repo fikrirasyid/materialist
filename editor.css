@@ -831,6 +831,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   vertical-align: baseline;
 }
+.comment-body sup a,
+.comment-body sub a,
+.entry-content sup a,
+.entry-content sub a {
+  text-decoration: none;
+}
 .comment-body sup,
 .entry-content sup {
   bottom: 1ex;
@@ -1054,6 +1060,10 @@ body#tinymce sub {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
+}
+body#tinymce sup a,
+body#tinymce sub a {
+  text-decoration: none;
 }
 body#tinymce sup {
   bottom: 1ex;
