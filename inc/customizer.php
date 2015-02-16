@@ -48,15 +48,24 @@ add_action( 'customize_register', 'materialist_customize_register' );
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function materialist_customize_preview_js() {
+function materialist_customize_preview_js( $wp_customize ) {
 	wp_enqueue_script( 'materialist_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20150129', true );
 
-	// Attaching variables
-	wp_localize_script( 'materialist_customizer', 'materialist_customizer_params', apply_filters( 'materialist_customizer_params', array(
+	// Default params
+	$materialist_customizer_params = array(
 		'generate_color_scheme_endpoint' 		=> esc_url( admin_url( 'admin-ajax.php?action=materialist_generate_customizer_color_scheme' ) ),
 		'generate_color_scheme_error_message' 	=> __( 'Error generating color scheme. Please try again.', 'materialist' ),
 		'clear_customizer_settings'				=> esc_url( admin_url( 'admin-ajax.php?action=materialist_clear_customizer_settings' ) )		
-	) ) );
+	);
+
+	// Adding proper error message when customizer fails to generate color scheme in live preview mode (theme hasn’t been activated). 
+	// The color scheme is generated using wp_ajax and wp_ajax cannot be registered if the theme hasn’t been activated.
+	if( ! $wp_customize->is_theme_active() ){
+		$materialist_customizer_params['generate_color_scheme_error_message'] = __( 'Color scheme cannot be generated. Please activate Materialist theme first.', 'materialist' );
+	}
+
+	// Attaching variables
+	wp_localize_script( 'materialist_customizer', 'materialist_customizer_params', apply_filters( 'materialist_customizer_params', $materialist_customizer_params ) );
 
 	// Display color scheme previewer
 	$color_scheme = get_theme_mod( 'color_scheme_customizer', false );
