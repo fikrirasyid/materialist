@@ -128,13 +128,13 @@ function materialist_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'materialist' ) );
 		if ( $categories_list && materialist_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( '<span class="label">Posted in</span> %1$s', 'materialist' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links entry-footer-item">' . __( '<span class="label">Posted in</span> %1$s', 'materialist' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'materialist' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( '<span class="label">Tagged by</span> %1$s', 'materialist' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links entry-footer-item">' . __( '<span class="label">Tagged by</span> %1$s', 'materialist' ) . '</span>', $tags_list );
 		}
 	}
 

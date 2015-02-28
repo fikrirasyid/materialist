@@ -1033,6 +1033,40 @@ th {
 }
 
 /*--------------------------------------------------------------
+3.0 Animations
+--------------------------------------------------------------*/
+@-webkit-keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
+}
+@keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
+}
+.top-nav-toggle-button-ripple {
+  padding: 20px;
+  margin: -13px 0 0 -10px;
+  z-index: 50 !important;
+}
+
+.drawer-toggle-button-ripple {
+  padding: 20px;
+  margin: -13px 0 0 -10px;
+}
+
+/*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
 button,
