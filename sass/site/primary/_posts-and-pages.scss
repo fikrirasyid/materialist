@@ -98,7 +98,7 @@
 			color: $color__accent_darker;
 			-webkit-transform: rotate(-45deg);
 			-moz-transform: rotate(-45deg);
-			-o-transform: rotate(-45deg);			
+			-o-transform: rotate(-45deg);
 		}
 	}
 
@@ -185,7 +185,7 @@
 
 	a{
 		text-decoration: none;
-			
+
 		&:hover{
 			text-decoration: underline;
 			color: lighten( $color__accent, 10% );
@@ -219,9 +219,9 @@
 	margin-top: 20px;
 }
 
-.error404,
-.page,
-.single{
+body.error404,
+body.page,
+body.single{
 	.hentry{
 		padding: 25px 15px;
 
@@ -230,7 +230,7 @@
 		}
 	}
 
-	.entry-header{		
+	.entry-header{
 		display: block;
 	}
 
@@ -298,8 +298,8 @@
 							display: none;
 						}
 					}
-				}			
-			}			
+				}
+			}
 		}
 	}
 }
@@ -324,7 +324,7 @@
 	.page-links-title{
 		padding-right: 5px;
 	}
-	
+
 	a{
 		text-decoration: none;
 
@@ -385,12 +385,12 @@
 
 		&:hover{
 			opacity: .7;
-			
+
 			&:before,
 			&:after{
 				opacity: .7;
 			}
-		}		
+		}
 	}
 }
 
@@ -448,7 +448,7 @@
 
 		&.not-found{
 			padding:20px 25px 27px;
-		}		
+		}
 	}
 
 	.entry-date{
@@ -475,10 +475,10 @@
 	.page-links{
 		margin-top: 3em;
 	}
-	
-	.error404,
-	.page,
-	.single{
+
+	body.error404,
+	body.page,
+	body.single{
 		.hentry{
 			padding: 25px 60px;
 		}
@@ -528,12 +528,12 @@
 	}
 
 	.hentry{
-		padding-left: 160px;	
+		padding-left: 160px;
 
 
 		&.not-found{
 			padding:40px 60px 45px;
-		}		
+		}
 	}
 
 	.entry-date{
@@ -556,9 +556,9 @@
 		line-height: 1.6;
 	}
 
-	.error404,
-	.single,
-	.page{
+	body.error404,
+	body.single,
+	body.page{
 		.hentry{
 			padding-top: 80px;
 
