@@ -28,7 +28,7 @@ function materialist_customize_register( $wp_customize ) {
 		'type'     		=> 'select',
 		'choices'  		=> materialist_color_schemes_choices(),
 		'priority' 		=> 1
-	) );	
+	) );
 
 	// Adding accent color control
 	$wp_customize->add_setting( 'accent_color', array(
@@ -42,6 +42,30 @@ function materialist_customize_register( $wp_customize ) {
 		'description' => esc_html__( 'Select one light color of your choice. Materialist will adjust its color scheme based on this color of choice..', 'materialist' ),
 		'section'     => 'colors',
 	) ) );
+
+    // Adding header image control
+    $wp_customize->add_section('materialist_header_section', array(
+		'title'       => __('Header Image', 'materialist'),
+		'priority'    => 30,
+		'description' => esc_html__('Upload a header image to replace the default color in the header', 'materialist'),
+    ) );
+
+    $wp_customize->add_setting('header_image', array(
+		'transport'            => 'postMessage',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_image', array(
+		'label'    => esc_html__('Header Image', 'materialist'),
+		'section'  => 'materialist_header_section',
+		'settings' => 'header_image',
+    ) ) );
+
+    $wp_customize->add_setting( 'single_header_image', array());
+    $wp_customize->add_control( 'single_header_image', array(
+        'type' => 'checkbox',
+        'label' => esc_html__( 'Set featured post image as header background', 'materialist' ),
+        'section' => 'materialist_header_section',
+    ) );
 }
 add_action( 'customize_register', 'materialist_customize_register' );
 
@@ -55,10 +79,13 @@ function materialist_customize_preview_js( $wp_customize ) {
 	$materialist_customizer_params = array(
 		'generate_color_scheme_endpoint' 		=> esc_url( admin_url( 'admin-ajax.php?action=materialist_generate_customizer_color_scheme' ) ),
 		'generate_color_scheme_error_message' 	=> __( 'Error generating color scheme. Please try again.', 'materialist' ),
-		'clear_customizer_settings'				=> esc_url( admin_url( 'admin-ajax.php?action=materialist_clear_customizer_settings' ) )		
+		'generate_header_scheme_error_message'   => __('Error generating header scheme. Please try again.', 'materialist'),
+		'clear_customizer_settings'				=> esc_url( admin_url( 'admin-ajax.php?action=materialist_clear_customizer_settings' ) ),
+		'current_color_scheme'                  => get_theme_mod('accent_color', false),
+        'current_header_image'                  => get_theme_mod('header_image', false)
 	);
 
-	// Adding proper error message when customizer fails to generate color scheme in live preview mode (theme hasn’t been activated). 
+	// Adding proper error message when customizer fails to generate color scheme in live preview mode (theme hasn’t been activated).
 	// The color scheme is generated using wp_ajax and wp_ajax cannot be registered if the theme hasn’t been activated.
 	if( ! $wp_customize->is_theme_active() ){
 		$materialist_customizer_params['generate_color_scheme_error_message'] = __( 'Color scheme cannot be generated. Please activate Materialist theme first.', 'materialist' );
@@ -74,11 +101,11 @@ function materialist_customize_preview_js( $wp_customize ) {
 		remove_action( 'wp_enqueue_scripts', 'materialist_color_scheme' );
 
 		/**
-		 * Reload default style, wp_add_inline_style fail when the handle doesn't exist 
+		 * Reload default style, wp_add_inline_style fail when the handle doesn't exist
 		 */
 		wp_enqueue_style( 'materialist-style', get_stylesheet_uri() );
 		$inline_style = wp_add_inline_style( 'materialist-style', $color_scheme );
-	}		
+	}
 }
 add_action( 'customize_preview_init', 'materialist_customize_preview_js' );
 
@@ -142,17 +169,17 @@ function materialist_sanitize_hex_color_no_hash( $color ){
 	if ( '' === $color )
 		return '';
 
-	return materialist_sanitize_hex_color( '#' . $color ) ? $color : null;	
+	return materialist_sanitize_hex_color( '#' . $color ) ? $color : null;
 }
 endif;
 
 /**
  * Generate color scheme based on color accent given
- * 
+ *
  * @uses Materialist_Simple_Color_Adjuster
  */
 if( ! function_exists( 'materialist_generate_color_scheme_css' ) ) :
-function materialist_generate_color_scheme_css( $color__accent ){
+function materialist_generate_color_scheme_css( $color__accent, $image__header ){
 
 	// Verify color accent
 	if( ! materialist_sanitize_hex_color( $color__accent ) ){
@@ -199,14 +226,14 @@ function materialist_generate_color_scheme_css( $color__accent ){
 		input[type='reset']:focus,
 		input[type='submit']:focus{
 			background-color: " . $color->darken( $color__accent, 10 ) . ";
-			box-shadow: 0 2px 2px " . $color->darken( $color__accent, 30 ) . ";	
+			box-shadow: 0 2px 2px " . $color->darken( $color__accent, 30 ) . ";
 		}
 
 		button:focus:hover,
 		input[type='button']:focus:hover,
 		input[type='reset']:focus:hover,
 		input[type='submit']:focus:hover{
-			background-color: " . $color->lighten( $color__accent, 6 ) . ";	
+			background-color: " . $color->lighten( $color__accent, 6 ) . ";
 		}
 
 		button:focus:active,
@@ -223,19 +250,24 @@ function materialist_generate_color_scheme_css( $color__accent ){
 		input[type='password']:focus,
 		input[type='search']:focus,
 		textarea:focus {
-			border-color: {$color__accent};		
+			border-color: {$color__accent};
 			box-shadow: inset 0 -1px 0 {$color__accent};
 		}
 
 		/* _menus.scss */
 		body.scrolling #top-navigation{
-			background: {$color__accent_darker};	
+			background: {$color__accent_darker};
 		}
 
 		/* _header.scss */
-		#masthead{
-			background: {$color__accent};
-		}
+		#masthead{".
+			((!$image__header) ?
+			"background: {$color__accent};" :
+			"background: {$color__accent};
+			background-image: url('{$image__header}');
+			background-position: 50% 50%;
+			background-size: cover;")
+		."}
 
 		/* _comments.scss */
 		.comments-title{
@@ -260,7 +292,7 @@ function materialist_generate_color_scheme_css( $color__accent ){
 		}
 
 		.hentry.sticky:after{
-			color: {$color__accent_darker};	
+			color: {$color__accent_darker};
 		}
 
 
@@ -271,21 +303,21 @@ function materialist_generate_color_scheme_css( $color__accent ){
 		.error404 .entry-title,
 		.page .entry-title,
 		.single .entry-title{
-			color: {$color__accent};	
+			color: {$color__accent};
 		}
 
 		.page-links a .page-link{
-			color: {$color__accent};	
+			color: {$color__accent};
 		}
 
 		/* _widgets.scss */
 		.drawer-content .drawer-header{
-			color: {$color__accent_darker};	
+			color: {$color__accent_darker};
 		}
 
 		.widget .widgettitle,
 		.widget .widget-title{
-			color: {$color__accent_darker};	
+			color: {$color__accent_darker};
 		}
 
 		/* _copy.scss */
@@ -312,7 +344,7 @@ function materialist_generate_color_scheme_css( $color__accent ){
 		.comment-body kbd,
 		.comment-body tt,
 		.comment-body var,{
-			color: {$color__accent_darker};	
+			color: {$color__accent_darker};
 		}
 	";
 
@@ -326,17 +358,18 @@ endif;
 if( ! function_exists( 'materialist_generate_customizer_color_scheme' ) ) :
 function materialist_generate_customizer_color_scheme(){
 
-	if( current_user_can( 'customize' ) && isset( $_GET['accent_color'] ) && materialist_sanitize_hex_color_no_hash( $_GET['accent_color'] ) ){
+	if( current_user_can( 'customize' ) && isset( $_GET['accent_color'] ) && materialist_sanitize_hex_color_no_hash( $_GET['accent_color'] ) && isset( $_GET['header_image'] ) ){
 
 		// Get accent color
 		$accent_color = materialist_sanitize_hex_color_no_hash( $_GET['accent_color'] );
+		$header_image = $_GET[ 'header_image' ];
 
 		if( $accent_color ){
 
 			$accent_color = '#' . $accent_color;
 
 			// Generate color scheme css
-			$css = materialist_generate_color_scheme_css( $accent_color );
+			$css = materialist_generate_color_scheme_css( $accent_color, $header_image );
 
 			// Set Color Scheme
 			set_theme_mod( 'color_scheme_customizer', $css );
@@ -355,7 +388,7 @@ function materialist_generate_customizer_color_scheme(){
 	}
 
 	// Transmit message
-	echo json_encode( $generate ); 
+	echo json_encode( $generate );
 
 	die();
 }
@@ -369,11 +402,12 @@ if ( ! function_exists( 'materialist_generate_color_scheme' ) ) :
 function materialist_generate_color_scheme(){
 
 	$accent_color = get_theme_mod( 'accent_color', false );
+	$header_image = get_theme_mod( 'header_image', false );
 
 	if( $accent_color ){
 
 		// SCSS template
-		$css = materialist_generate_color_scheme_css( $accent_color );
+		$css = materialist_generate_color_scheme_css( $accent_color, $header_image );
 
 		// Bail if color scheme doesn't generate valid CSS
 		if( ! $css ){
@@ -394,13 +428,13 @@ add_action( 'customize_save_after', 'materialist_generate_color_scheme' );
 /**
  * Endpoint for clearing all customizer temporary settings
  * This is made to be triggered via JS call (upon tab is closed)
- * 
+ *
  * @return void
  */
 if( ! function_exists( 'materialist_clear_customizer_settings' ) ) :
 function materialist_clear_customizer_settings(){
 	if( current_user_can( 'customize' ) ){
-		remove_theme_mod( 'color_scheme_customizer' );		
+		remove_theme_mod( 'color_scheme_customizer' );
 	}
 
 	die();
